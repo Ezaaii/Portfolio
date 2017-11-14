@@ -33,6 +33,8 @@ nav .navcontent{
   height: 250px;
   border-radius: 250px;
   background-color: grey;
+  background-image: url(./img/profile.jpg);
+  background-size: cover;
 }
 nav h1{
   margin-top: 5vh;
