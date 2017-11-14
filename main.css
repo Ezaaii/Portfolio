@@ -82,6 +82,9 @@ main {
   margin-left: 300px;
   background-color: #222222;
   color: #fff;
+  background-image: url(./img/mercy.jpg);
+  background-repeat: no-repeat;
+  position:  sticky;
 }
 #home{
   display: block;
@@ -103,6 +106,13 @@ main {
   margin-top: 3vh;
   margin-bottom: 3vh;
   height: inherit;
+}
+#illu .bgi{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  z-index: 0;
 }
 #anim{
   display: block;
@@ -135,6 +145,7 @@ main {
   background-color: #333333;
 }
 .content{
+  z-index: 1;
   margin-left: 3vh;
 }
 #contact .content{
