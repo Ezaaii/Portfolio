@@ -1,0 +1,258 @@
+/*DESKTOP VERSION*/
+body{
+  margin: 0 auto;
+  padding : 0;
+  font-family: sans-serif;
+}
+h1, h2, h3, h4{
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0vh;
+}
+nav {
+  display: block;
+  position: fixed;
+  margin: auto;
+  padding-top: 3vh;
+  float: left;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 5px 0px 5px rgba(50,50,50,0.7);
+  z-index: 3;
+}
+nav .navcontent{
+  display: block;
+  margin: auto;
+  width: 260px;
+}
+.navcontent img{
+  display: block;
+  margin:auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  background-color: grey;
+}
+nav h1{
+  margin-top: 5vh;
+}
+ul{
+  list-style: none;
+}
+nav ul{
+  margin-top: 5vh;
+}
+nav ul a li{
+  color: #111;
+}
+a{
+  text-decoration: none;
+}
+.button{
+  cursor: pointer;
+}
+ul.button li{
+  display: block;
+  margin-left: -60px;
+  padding-top: 15px;
+  background-color: #DDD;
+  width: 300px;
+  height:35px;
+  text-align: center;
+}
+ul.button li:hover{
+  background-color: #CCC
+}
+.linksnav{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 250px;
+  width: 95%;
+  text-align: center;
+}
+.linksnav a, .linksnav i{
+  margin-right: 5px;
+  text-decoration: none;
+  color: #222;
+}
+main {
+  float: right;
+  margin-left: 300px;
+  background-color: #222222;
+  color: #fff;
+}
+#home{
+  display: block;
+  margin: auto;
+  padding:3vh;
+  margin-bottom: 3vh;
+  height: inherit;
+  background-color: #333333;
+}
+#home .content p{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+#illu{
+  display: block;
+  margin: auto;
+  padding:3vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  height: inherit;
+}
+#anim{
+  display: block;
+  margin: auto;
+  padding:3vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  height: inherit;
+  background-color: #333333;
+}
+#code{
+  display: block;
+  margin: auto;
+  padding:3vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  height: inherit;
+}
+#illu .content .images,#anim .content .images,#code .content .images{
+  background-color: grey;
+  height: 900px;
+  width: 98%;
+}
+#contact{
+  display: block;
+  margin: auto;
+  padding:3vh;
+  margin-top: 3vh;
+  height: inherit;
+  background-color: #333333;
+}
+.content{
+  margin-left: 3vh;
+}
+#contact .content{
+  display: block;
+  margin: auto;
+  width: 25%;
+  text-align: center;
+}
+#contact .links{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-left: 5vh;
+}
+#contact .links i{
+  margin-right: 15px;
+  color: #fff;
+}
+/*LOW HEIGHT SCREEN*/
+@media only screen and (max-height: 800px){
+  nav {
+    width: 100px;
+  }
+  nav .navcontent{
+    width: 80px;
+  }
+  .navcontent img{
+    width: 80px;
+    height: 80px;
+  }
+  nav h1{
+    display: none;
+  }
+  ul.button li{
+    margin-left: -50px;
+    width: 110px;
+  }
+  main {
+    margin-left: 100px;
+  }
+  .linksnav{
+    flex-direction: column;
+    margin-top: 0px;
+    width: 95%;
+  }
+}
+/*SMARTPHONE USAGE*/
+@media only screen and (max-width: 700px){
+  nav {
+    padding-top: 3vh;
+    width: 100%;
+    height: 60px;
+  }
+  nav .navcontent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+  }
+  .navcontent img{
+    margin-right: 4.6vh;
+    margin-top: -1vh;
+    margin-left: 1.5vh;
+    width: 50px;
+    height: 50px;
+  }
+  nav h1{
+    display: none;
+  }
+  nav ul{
+    margin-top: -3vh;
+  }
+  .button{
+    display: flex;
+    flex-direction: row;
+  }
+  ul.button li{
+    margin-left: 0px;
+    padding-top: 0px;
+    width: 80px;
+    height:83px;
+  }
+  .linksnav{
+    display: none;
+  }
+  main {
+    margin-left: 0px;
+  }
+  #home{
+    display: block;
+    margin: auto;
+    padding:3vh;
+    padding-top: 15vh;
+    margin-bottom: 3vh;
+    height: inherit;
+    background-color: #333333;
+  }
+  #home .content p{
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  #illu,#anim,#code{
+    display: block;
+    margin: auto;
+    padding: 0;
+    padding-left: 1.5vh;
+    margin-top: 0vh;
+    margin-bottom: 3vh;
+    height: inherit;
+  }
+  #illu h2,#anim h2,#code h2{
+    margin-top: 5vh;
+  }
+  .content{
+    margin-left: 0vh;
+  }
+  #contact .content{
+    width: 55%;
+  }
+}
