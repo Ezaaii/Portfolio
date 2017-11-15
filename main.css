@@ -93,7 +93,7 @@ main {
   color: #fff;
 }
 .bgi{
-  background-image: url(./img/mercy.jpg);
+  background-image: url(./img/illus/mercy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -101,7 +101,7 @@ main {
   height: inherit;
 }
 .bgi2{
-  background-image: url(./img/arcade.jpg);
+  background-image: url(./img/illus/arcade.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
