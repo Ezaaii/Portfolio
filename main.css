@@ -169,17 +169,21 @@ main {
   border-radius: 6px;
   box-shadow: 5px 5px 5px rgba(10,10,10,0.5)
 }
-.images .flex .vignette:hover {
+.mini img{
+  height: 100%;
+}
+/*.images .flex .vignette:hover {
   margin: -100px;
   position: absolute;
   height: 500px;
   width: 1000px;
   z-index: 500;
-}
+}*/
 .mini{
   height: 70%;
   background-color: grey;
   border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
 }
 .desc{
   display: block;
