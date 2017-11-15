@@ -31,7 +31,7 @@ nav .navcontent{
   margin:auto;
   width: 250px;
   height: 250px;
-  border-radius: 150px;
+  border-radius: 100%;
   background-color: grey;
   background-image: url(./img/profile.jpg);
   background-size: cover;
@@ -47,6 +47,9 @@ nav ul{
 }
 nav ul a li{
   color: #111;
+}
+nav p{
+  margin-top: 0px;
 }
 a{
   text-decoration: none;
@@ -64,7 +67,7 @@ ul.button li{
   text-align: center;
 }
 ul.button li:hover{
-  background-color: #CCC
+  background-color: #6E2CFF
 }
 .linksnav{
   display: flex;
@@ -81,7 +84,7 @@ ul.button li:hover{
   cursor: pointer;
 }
 .linksnav i:hover{
-  color: #444;
+  color: #6E2CFF;
 }
 main {
   float: right;
@@ -147,6 +150,7 @@ main {
   background-color: rgba(200,200,200,0.5);
   height: 900px;
   width: 98%;
+  padding-top: 1vh;
 }
 #contact{
   display: block;
@@ -178,7 +182,7 @@ main {
   cursor: pointer;
 }
 #contact .links i:hover{
-color: #999;
+color: #6E2CFF;
 }
 /*LOW HEIGHT SCREEN*/
 @media only screen and (max-height: 800px){
@@ -188,7 +192,7 @@ color: #999;
   nav .navcontent{
     width: 80px;
   }
-  .navcontent img{
+  .navcontent .img{
     width: 80px;
     height: 80px;
   }
@@ -197,7 +201,7 @@ color: #999;
   }
   ul.button li{
     margin-left: -50px;
-    width: 110px;
+    width: 100px;
   }
   main {
     margin-left: 100px;
@@ -207,13 +211,16 @@ color: #999;
     margin-top: 0px;
     width: 95%;
   }
+  .button li p{
+    display: none;
+  }
 }
 /*SMARTPHONE USAGE*/
 @media only screen and (max-width: 700px){
   nav {
     padding-top: 3vh;
     width: 100%;
-    height: 60px;
+    height: 34px;
   }
   nav .navcontent{
     display: flex;
@@ -221,12 +228,12 @@ color: #999;
     width: 100%;
     height: 50px;
   }
-  .navcontent img{
-    margin-right: 4.6vh;
-    margin-top: -1vh;
-    margin-left: 1.5vh;
-    width: 50px;
-    height: 50px;
+  .navcontent .img{
+    margin-right: 3vh;
+    margin-top: -2vh;
+    margin-left: 2vh;
+    width: 45px;
+    height: 45px;
   }
   nav h1{
     display: none;
@@ -242,7 +249,7 @@ color: #999;
     margin-left: 0px;
     padding-top: 0px;
     width: 80px;
-    height:83px;
+    height:100%;
   }
   .linksnav{
     display: none;
@@ -281,5 +288,8 @@ color: #999;
   }
   #contact .content{
     width: 55%;
+  }
+  #contact .links{
+    margin-left: 0vh;
   }
 }
