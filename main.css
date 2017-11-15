@@ -26,12 +26,12 @@ nav .navcontent{
   margin: auto;
   width: 260px;
 }
-.navcontent img{
+.navcontent .img{
   display: block;
   margin:auto;
   width: 250px;
   height: 250px;
-  border-radius: 250px;
+  border-radius: 150px;
   background-color: grey;
   background-image: url(./img/profile.jpg);
   background-size: cover;
@@ -78,15 +78,32 @@ ul.button li:hover{
   margin-right: 5px;
   text-decoration: none;
   color: #222;
+  cursor: pointer;
+}
+.linksnav i:hover{
+  color: #444;
 }
 main {
   float: right;
   margin-left: 300px;
   background-color: #222222;
   color: #fff;
+}
+.bgi{
   background-image: url(./img/mercy.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  position:  sticky;
+  background-attachment: fixed;
+  background-blend-mode:  soft-light;
+  height: inherit;
+}
+.bgi2{
+  background-image: url(./img/arcade.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode:  soft-light;
+  height: inherit;
 }
 #home{
   display: block;
@@ -109,18 +126,11 @@ main {
   margin-bottom: 3vh;
   height: inherit;
 }
-#illu .bgi{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-
-  z-index: 0;
-}
 #anim{
   display: block;
   margin: auto;
   padding:3vh;
-  margin-top: 5vh;
+  margin-top: 3vh;
   margin-bottom: 3vh;
   height: inherit;
   background-color: #333333;
@@ -134,7 +144,7 @@ main {
   height: inherit;
 }
 #illu .content .images,#anim .content .images,#code .content .images{
-  background-color: grey;
+  background-color: rgba(200,200,200,0.5);
   height: 900px;
   width: 98%;
 }
@@ -165,6 +175,10 @@ main {
 #contact .links i{
   margin-right: 15px;
   color: #fff;
+  cursor: pointer;
+}
+#contact .links i:hover{
+color: #999;
 }
 /*LOW HEIGHT SCREEN*/
 @media only screen and (max-height: 800px){
