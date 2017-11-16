@@ -1,30 +1,45 @@
 <html>
  	 <head>
-    <meta chartset="UTF-8">
+     <html lang="fr">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <title>Nicolas Van Roost</title>
   </head>
   <body>
+    <!--ZOOM PHOTOS : HIDDEN-->
+    <div id="H_pic1">
+      <div class="H_box">
+        <div class="H_boxcontent">
+          <div class="H_pics">
+            <div class="exit_button"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
+          </div><!--Image-->
+          <div class="H_desc"><!--Description-->
+            <h3>title</h3>
+            <p>prout prout</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- NAVIGATEUR -->
     <nav>
       <div class="navcontent">
         <div class="img"></div>
         <h1>Nicolas </br>Van Roost</h1>
-        <ul class="button">
+        <ul class="button"> <!--BOUTONS DE NAVIGATION-->
           <a id="homelink" class="button"><li><p>home</p></li></a>
           <a id="illulink" class="button"><li><p>illustration</p></li></a>
           <a id="animlink" class="button"><li><p>animation</p></li></a>
           <a id="codelink" class="button"><li><p>programmation</p></li></a>
           <a id="contactlink" class="button"><li><p>contact</p></li></a>
         </ul>
-        <div class="linksnav"> <!--BOUTONS-->
+        <div class="linksnav"> <!--boutons-->
           <a href="https://www.facebook.com/ezouille" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.twitter.com/ezaaii" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.behance.net/ezaaii" target="_blank"><i class="fa fa-behance-square fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.youtube.com/ezaaii" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
-          <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
           <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
         </div>
       </div>
@@ -48,7 +63,72 @@
           <div class="content">
             <div class="images">
               <h2>portfolio | illustration</h2>
-              <p>mettre du contenu ici!</p>
+              <div class="flex">
+                <div class="vignette"><!--img1-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/arcade.jpg"/></div>
+                  <div class="desc">
+                    <h4>Arcade team</h4>
+                    <p>Projet arcade.</p>
+                  </div>
+                </div>
+                <div class="vignette"><!--img2-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/mercy.jpg" style="height:130%; width:120%; margin-left:-3vh; margin-top:-3vh"/></div>
+                  <div class="desc">
+                    <h4>Mercy (Overwatch)</h4>
+                    <p>Fanart de Mercy du jeu Overwatch.</p>
+                  </div>
+                </div>
+                <div class="vignette"><!--img3-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/Kallie.jpg"/></div>
+                  <div class="desc">
+                    <h4>Kallie</h4>
+                    <p>Character design d'un personnage de mon univers : Kallie, la mage.</p>
+                  </div>
+                </div>
+                <div class="vignette"><!--img4-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/Jenna.jpg" style="margin-left:-5vh;"/></div>
+                  <div class="desc">
+                    <h4>Jenna</h4>
+                    <p>Character design d'un personnage de mon univers : Jenna, la berserker.</p>
+                  </div>
+                </div>
+                <div class="vignette"><!--img5-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/dva.jpg"/></div>
+                  <div class="desc">
+                    <h4>D.va (Overwatch)</h4>
+                    <p>Fanart de D.va du jeu Overwatch.</p>
+                  </div>
+                </div>
+                <div class="vignette"><!--img6-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/sylvanas.jpg" style="margin-left:-8vh;"/></div>
+                  <div class="desc">
+                    <h4>sylvanas (Warcraft)</h4>
+                    <p>Fanart de Sylvanas de la série de jeux Warcraft.</p>
+                  </div>
+                </div>
+                <div class="vignette"><!--img7-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/lol.jpg"/></div>
+                  <div class="desc">
+                    <h4>Glitch/vaporwave design</h4>
+                    <p>Design dans un style glitchwave.</p>
+                  </div>
+                </div>
+                <div class="vignette"><!--img8-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"><img src="./img/illus/eiva.jpg"/></div>
+                  <div class="desc">
+                    <h4>Eiva</h4>
+                    <p>Fanart du Character Design d'une amie.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -57,7 +137,24 @@
         <div class="content">
           <div class="images">
             <h2>portfolio | animation</h2>
-            <p>mettre du contenu ici!</p>
+            <div class="flex">
+              <div class="vignette"><!--img1-->
+                <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                <div class="mini"><img src="./img/anim/tropgros.png"/></div>
+                <div class="desc">
+                  <h4>Trop gros</h4>
+                  <p>Travail de fin d'études en Animation</p>
+                </div>
+              </div>
+              <div class="vignette"><!--img2-->
+                <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                <div class="mini"><img src="./img/anim/project.jpg"/></div>
+                <div class="desc">
+                  <h4>Quest's quest</h4>
+                  <p>Projet futur en cours de développement. Aussi nommé Q-Q.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -66,7 +163,16 @@
           <div class="content">
             <div class="images">
               <h2>portfolio | Programmation</h2>
-              <p>mettre du contenu ici!</p>
+              <div class="flex">
+                <div class="vignette"><!--img1-->
+                  <div class="zoom"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
+                  <div class="mini"></div>
+                  <div class="desc">
+                    <h4>titre</h4>
+                    <p>description blablablablabla</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -74,15 +180,17 @@
       <section id="contact"><!--SECTION CONTACT-->
         <div class="content">
           <h2>contact</h2>
-          <div class="links"><!--BOUTONS-->
+          <hr>
+          <div class="links"><!--boutons-->
             <a href="https://www.facebook.com/ezouille" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.twitter.com/ezaaii" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.behance.net/ezaaii" target="_blank"><i class="fa fa-behance-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.youtube.com/ezaaii" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
-            <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
             <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
           </div>
+          <hr>
           <p>Copyright © Nicolas Van Roost (Ez) | 2017</p>
         </div>
       </section>

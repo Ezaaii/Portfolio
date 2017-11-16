@@ -18,7 +18,7 @@ nav {
   width: 300px;
   height: 100%;
   background-color: #fff;
-  box-shadow: 5px 0px 5px rgba(50,50,50,0.7);
+  box-shadow: 5px 0px 5px rgba(10,10,10,0.5);
   z-index: 3;
 }
 nav .navcontent{
@@ -61,13 +61,16 @@ ul.button li{
   display: block;
   margin-left: -60px;
   padding-top: 15px;
-  background-color: #DDD;
+  background-color: #222;
+  color: #fff;
   width: 300px;
   height:35px;
   text-align: center;
+  font-weight: bold;
 }
 ul.button li:hover{
-  background-color: #6E2CFF
+  background-color: #7A072F;
+  color: #fff;
 }
 .linksnav{
   display: flex;
@@ -84,7 +87,7 @@ ul.button li:hover{
   cursor: pointer;
 }
 .linksnav i:hover{
-  color: #6E2CFF;
+  color: #7A072F;
 }
 main {
   float: right;
@@ -93,7 +96,7 @@ main {
   color: #fff;
 }
 .bgi{
-  background-image: url(./img/mercy.jpg);
+  background-image: url(./img/illus/mercy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -101,8 +104,9 @@ main {
   height: inherit;
 }
 .bgi2{
-  background-image: url(./img/arcade.jpg);
-  background-size: cover;
+  background-image: url(./img/illus/arcade.jpg);
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode:  soft-light;
@@ -114,7 +118,7 @@ main {
   padding:3vh;
   margin-bottom: 3vh;
   height: inherit;
-  background-color: #333333;
+  background-color: #222;
 }
 #home .content p{
   display: block;
@@ -136,7 +140,7 @@ main {
   margin-top: 3vh;
   margin-bottom: 3vh;
   height: inherit;
-  background-color: #333333;
+  background-color: #222;
 }
 #code{
   display: block;
@@ -147,10 +151,107 @@ main {
   height: inherit;
 }
 #illu .content .images,#anim .content .images,#code .content .images{
-  background-color: rgba(200,200,200,0.5);
-  height: 900px;
+  background-color: rgba(20,20,20,0.5);
+  height: inherit;
   width: 98%;
   padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  width: inherit;
+  height: inherit;
+  margin: 3.5vh;
+}
+.images .flex .vignette{
+  height: 360px;
+  width: 317px;
+  background-color: #fff;
+  margin: 1vh;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(10,10,10,0.5);
+  overflow: hidden;
+}
+.zoom{
+  display: block;
+  position: absolute;
+  background-color: rgba(122,7,47,0);
+  color: rgba(256,256,256,0);
+  height: 150px;
+  width: inherit;
+  border-radius: 6px 6px 0px 0px;
+  text-align: center;
+  padding-top: 100px;
+  cursor: pointer;
+}
+.zoom:hover{
+  background-color: rgba(122,7,47,0.5);
+  color: rgba(256,256,256,1);
+}
+.mini{
+  height: 70%;
+  background-color: #190A3B;
+  border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
+}
+.mini img{
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+.desc{
+  display: block;
+  height: 30%;
+  margin: 1vh;
+}
+.desc h4, .desc p{
+  color: #222;
+}
+#H_pic1{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 250;
+  background-color: rgba(10, 10, 10, 0.7);
+  color: #222;
+}
+.H_box{
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.5vh;
+  padding-top: 0.5vh;
+  height: 930px;
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(10,10,10,0.5)
+}
+.H_box .H_boxcontent{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 95%;
+  width: 95%;
+}
+.H_pics{
+  display: block;
+  margin: auto;
+  height: 80%;
+  width: 100%;
+  background-color: grey;
+}
+.exit_button{
+  float: right;
+  margin:10px;
+  background-color: #222;
+  color:#fff;
+  text-align: center;
+  padding-top: 3px;
+  height: 37px;
+  width: 40px;
+  border-radius: 6px;
 }
 #contact{
   display: block;
@@ -158,7 +259,7 @@ main {
   padding:3vh;
   margin-top: 3vh;
   height: inherit;
-  background-color: #333333;
+  background-color: #222;
 }
 .content{
   z-index: 1;
@@ -182,7 +283,7 @@ main {
   cursor: pointer;
 }
 #contact .links i:hover{
-color: #6E2CFF;
+color: #7A072F;
 }
 /*LOW HEIGHT SCREEN*/
 @media only screen and (max-height: 800px){
