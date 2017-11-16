@@ -105,7 +105,7 @@ main {
 }
 .bgi2{
   background-image: url(./img/illus/arcade.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
