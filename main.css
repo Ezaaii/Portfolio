@@ -61,13 +61,16 @@ ul.button li{
   display: block;
   margin-left: -60px;
   padding-top: 15px;
-  background-color: #DDD;
+  background-color: #222;
+  color: #fff;
   width: 300px;
   height:35px;
   text-align: center;
+  font-weight: bold;
 }
 ul.button li:hover{
-  background-color: #6E2CFF
+  background-color: #7A072F;
+  color: #fff;
 }
 .linksnav{
   display: flex;
@@ -84,7 +87,7 @@ ul.button li:hover{
   cursor: pointer;
 }
 .linksnav i:hover{
-  color: #6E2CFF;
+  color: #7A072F;
 }
 main {
   float: right;
@@ -102,7 +105,8 @@ main {
 }
 .bgi2{
   background-image: url(./img/illus/arcade.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode:  soft-light;
@@ -155,7 +159,6 @@ main {
 }
 .flex{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   width: inherit;
   height: inherit;
@@ -167,23 +170,35 @@ main {
   background-color: #fff;
   margin: 1vh;
   border-radius: 6px;
-  box-shadow: 5px 5px 5px rgba(10,10,10,0.5)
+  box-shadow: 5px 5px 5px rgba(10,10,10,0.5);
+  overflow: hidden;
 }
-.mini img{
-  height: 100%;
-}
-/*.images .flex .vignette:hover {
-  margin: -100px;
+.zoom{
+  display: block;
   position: absolute;
-  height: 500px;
-  width: 1000px;
-  z-index: 500;
-}*/
+  background-color: rgba(122,7,47,0);
+  color: rgba(256,256,256,0);
+  height: 150px;
+  width: inherit;
+  border-radius: 6px 6px 0px 0px;
+  text-align: center;
+  padding-top: 100px;
+  cursor: pointer;
+}
+.zoom:hover{
+  background-color: rgba(122,7,47,0.5);
+  color: rgba(256,256,256,1);
+}
 .mini{
   height: 70%;
-  background-color: grey;
+  background-color: #190A3B;
   border-radius: 6px 6px 0px 0px;
   overflow: hidden;
+}
+.mini img{
+  display: block;
+  margin: auto;
+  height: 100%;
 }
 .desc{
   display: block;
@@ -230,6 +245,13 @@ main {
 .exit_button{
   float: right;
   margin:10px;
+  background-color: #222;
+  color:#fff;
+  text-align: center;
+  padding-top: 3px;
+  height: 37px;
+  width: 40px;
+  border-radius: 6px;
 }
 #contact{
   display: block;
@@ -261,7 +283,7 @@ main {
   cursor: pointer;
 }
 #contact .links i:hover{
-color: #6E2CFF;
+color: #7A072F;
 }
 /*LOW HEIGHT SCREEN*/
 @media only screen and (max-height: 800px){
