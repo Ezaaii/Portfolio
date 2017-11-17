@@ -79,3 +79,25 @@ contlink.addEventListener("click", function(){
   animlink.classList.remove("highlighted");
   codelink.classList.remove("highlighted");
 });
+
+/////////
+//LINKS//
+/////////
+
+var mail = document.getElementById('mail');
+mail.addEventListener("click", function(){
+  alert("Vous pouvez m'envoyer un mail à : n.vanroost@gmail.com");
+});
+var mail2 = document.getElementById('mail2');
+mail2.addEventListener("click", function(){
+  alert("Vous pouvez m'envoyer un mail à : n.vanroost@gmail.com");
+});
+
+var tel = document.getElementById('tel');
+tel.addEventListener("click", function(){
+  alert("Vous pouvez m'appeller au 0474/../../..");
+});
+var tel2 = document.getElementById('tel2');
+tel2.addEventListener("click", function(){
+  alert("Vous pouvez m'appeller au 0474/../../..");
+});
