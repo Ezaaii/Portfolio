@@ -212,51 +212,6 @@ main {
 .desc h4, .desc p{
   color: #222;
 }
-#H_pic1{
-  display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 250;
-  background-color: rgba(10, 10, 10, 0.7);
-  color: #222;
-}
-.H_box{
-  display: block;
-  margin: 0 auto;
-  margin-top: 2.5vh;
-  padding-top: 0.5vh;
-  height: 930px;
-  width: 1200px;
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 5px 5px 5px rgba(10,10,10,0.5)
-}
-.H_box .H_boxcontent{
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  height: 95%;
-  width: 95%;
-}
-.H_pics{
-  display: block;
-  margin: auto;
-  height: 80%;
-  width: 100%;
-  background-color: grey;
-}
-.exit_button{
-  float: right;
-  margin:10px;
-  background-color: #222;
-  color:#fff;
-  text-align: center;
-  padding-top: 3px;
-  height: 37px;
-  width: 40px;
-  border-radius: 6px;
-}
 #contact{
   display: block;
   margin: auto;
@@ -289,6 +244,92 @@ main {
 #contact .links i:hover{
 color: #7A072F;
 }
+
+/*MODAL*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 500; /* Sit on top */
+    padding-top: 0.5vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.H_box{
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.5vh;
+  padding-top: 0.5vh;
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(10,10,10,0.5)
+}
+.H_box .H_boxcontent{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 95%;
+}
+.H_pics{
+  display: block;
+  margin: auto;
+  width: 100%;
+  background-color: grey;
+}
+.H_pics img{
+  width: 100%
+}
+.exit_button{
+  position: absolute;
+  float: right;
+  margin:10px;
+  background-color: #222;
+  color:#fff;
+  text-align: center;
+  padding-top: 3px;
+  height: 37px;
+  width: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.H_desc {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #222;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, .H_desc {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+/*MODAL ON SMARTPHONE*/
+@media only screen and (max-width: 700px){
+    .H_boxcontent {
+        width: 100%;
+    }
+}
+
 /*LOW HEIGHT SCREEN*/
 @media only screen and (max-height: 800px){
   nav {
