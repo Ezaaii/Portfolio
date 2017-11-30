@@ -85,9 +85,10 @@ a{
 .linksnav{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: auto;
-  margin-top: 250px;
-  width: 95%;
+  margin-top: 190px;
+  width: 60%;
   text-align: center;
 }
 .linksnav a, .linksnav i{
@@ -431,7 +432,7 @@ color: #7A072F;
     margin: auto;
     padding:3vh;
     padding-top: 15vh;
-    margin-bottom: 3vh;
+    margin-bottom: 8vh;
     height: inherit;
     background-color: #333333;
   }
@@ -445,18 +446,21 @@ color: #7A072F;
     margin: auto;
     padding: 0;
     padding-left: 1.5vh;
-    margin-top: 0vh;
-    margin-bottom: 3vh;
+    margin-top: -3vh;
+    margin-bottom: -3vh;
     height: inherit;
   }
   #illu h2,#anim h2,#code h2{
     margin-top: 5vh;
   }
   .content{
-    margin-left: 0vh;
+    margin-left: 1vh;
   }
   #contact .content{
     width: 55%;
+  }
+  #illu .content .images,#anim .content .images,#code .content .images{
+    width: 100%;
   }
   #contact .links{
     margin-left: 0vh;

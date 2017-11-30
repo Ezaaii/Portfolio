@@ -3,7 +3,9 @@
 ## Projet
 * Créer un portfolio pour afficher mes travaux et mes compétences.
 * Faire une galerie.
-* Gérer Html/css(/js) à fond.
+* Gérer Html/css/js à fond.
+* Comprendre les modals.
+* ajouter des animations (scroll, zoom, etc.)
 
 ## Difficultés
 * Difficile de faire les zooms sur images.
