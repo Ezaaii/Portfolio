@@ -241,7 +241,7 @@ main {
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin-left: 5vh;
+  margin-left: 2vh;
 }
 #contact .links i{
   margin-right: 15px;
@@ -430,16 +430,17 @@ color: #7A072F;
   #home{
     display: block;
     margin: auto;
+    margin-left: 6vh;
     padding:3vh;
-    padding-top: 15vh;
+    padding-top: 9vh;
     margin-bottom: 8vh;
     height: inherit;
-    background-color: #333333;
+    background-color: rgba(0,0,0,0);
   }
   #home .content p{
     display: block;
     margin: auto;
-    width: 100%;
+    width: 75%;
   }
   #illu,#anim,#code{
     display: block;
@@ -452,20 +453,36 @@ color: #7A072F;
   }
   #illu h2,#anim h2,#code h2{
     margin-top: 5vh;
+    margin-left: 12vh;
   }
   .content{
     margin-left: 1vh;
   }
   #contact .content{
-    width: 55%;
+    width: 75%;
+  }
+  #contact{
+    padding: 1vh;
+    padding-left: 10vh;
+  }
+  #illu{
   }
   #illu .content .images,#anim .content .images,#code .content .images{
     width: 100%;
+  }
+  #contact h2, #contact p, #contact hr{
+    margin-left: 3vh;
   }
   #contact .links{
     margin-left: 0vh;
   }
   .flex{
+    display: block;
     width: auto;
+  }
+  .vignette{
+    display: block;
+    margin: auto;
+    padding-left: 5vh;
   }
 }
