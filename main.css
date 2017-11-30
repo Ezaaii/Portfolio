@@ -32,7 +32,6 @@ nav .navcontent{
   width: 250px;
   height: 250px;
   border-radius: 100%;
-  background-color: grey;
   background-image: url(./img/profile.jpg);
   background-size: cover;
 }
@@ -286,10 +285,13 @@ color: #7A072F;
   display: block;
   margin: auto;
   width: 100%;
-  background-color: grey;
+  background-color: white;
 }
 .H_pics img{
   width: 100%
+}
+.H_pics iframe{
+  background-color: #fff;
 }
 .exit_button{
   position: absolute;
@@ -303,6 +305,7 @@ color: #7A072F;
   width: 40px;
   border-radius: 6px;
   cursor: pointer;
+  z-index: 501;
 }
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 .H_desc {
@@ -316,7 +319,7 @@ color: #7A072F;
     height: 150px;
 }
 /* Add Animation - Zoom in the Modal */
-.modal-content, .H_desc {
+.H_pics, .H_desc {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -332,7 +335,7 @@ color: #7A072F;
 }
 /*MODAL ON SMARTPHONE*/
 @media only screen and (max-width: 700px){
-    .H_boxcontent {
+    .modal {
         width: 100%;
     }
 }
