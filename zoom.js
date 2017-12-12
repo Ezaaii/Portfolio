@@ -144,6 +144,16 @@ exit13.onclick = function() {
   modal13.style.display = "none";
 }
 
+//IMG 14
+var modal14 = document.getElementById('myModal14');
+var img14 = document.getElementById('img14');
+img14.onclick = function(){
+  modal14.style.display = "block";
+}
+var exit14 = document.getElementById("exit_button14");
+exit14.onclick = function() {
+  modal14.style.display = "none";
+}
 //CALL DES ANIMS
 //ANIM 1
 var modalanim1 = document.getElementById('myModalanim1');// Get the modal
