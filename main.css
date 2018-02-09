@@ -1,24 +1,35 @@
-/*TEST*/
+/* PTR */
 .bloc1{
-  display: flex;
-  flex-direction: row;
-  display: block;
+  display: none;
+  margin: 0 auto;
+  padding : 2vh;
+  background-color: #333;
+  height: 350px;
+  min-width: 700px
+}
+.bloc2{
+  display: none;
   margin: auto;
   padding : 2vh;
   background-color: #333;
 }
-.bloc2{
+.aligncenter{
   display: block;
-  margin: auto;
-  padding : 2vh;
-  background-color: #333;
+  margin: 0 auto;
+  width: 700px;
+}
+.lefto {
+  float: left;
+}
+.righto{
+  float:left;
 }
 .cat{
   margin-bottom: 1vh;
   background-color: #555;
-  width: 250px;
+  width: 350px;
   padding-top: 10px;
-  height: 30px;
+  height: 40px;
   text-align: center;
   border-radius: 8px 0px 0px 8px;
   box-shadow: 3px 3px 3px #111;
@@ -27,18 +38,36 @@
   display: block;
   margin-bottom: 1vh;
   background-color: #888;
-  width: 250px;
+  width: 350px;
   padding-top: 10px;
-  height: 30px;
+  height: 40px;
   text-align: center;
   border-radius: 0px 8px 8px 0px;
   box-shadow: 3px 3px 3px #111;
 }
 /*DESKTOP VERSION*/
+html{
+  height: 100%;
+  width: inherit;
+}
 body{
   margin: 0 auto;
   padding : 0;
   font-family: sans-serif;
+  height: 100%;
+  width: inherit;
+  overflow-y: hidden;
+}
+/* scroll bar */
+::-webkit-scrollbar { /* width */
+    height: 5px;
+    width: 5px;
+}
+::-webkit-scrollbar-track {/* Track */
+    background: #211821;
+}
+::-webkit-scrollbar-thumb {/* Handle */
+    background:  #fff;
 }
 h1, h2, h3, h4{
   text-transform: uppercase;
@@ -55,7 +84,7 @@ nav {
   height: 100%;
   background-color: #fff;
   box-shadow: 5px 0px 5px rgba(10,10,10,0.5);
-  z-index: 3;
+  z-index: 500;
 }
 nav .navcontent{
   display: block;
@@ -73,6 +102,7 @@ nav .navcontent{
 }
 nav h1{
   margin-top: 5vh;
+  color: #222;
 }
 ul{
   list-style: none;
@@ -81,7 +111,7 @@ nav ul{
   margin-top: 5vh;
 }
 nav ul a li{
-  color: #111;
+  color: #222;
 }
 nav p{
   margin-top: 0px;
@@ -105,7 +135,7 @@ a{
   display: block;
   cursor: pointer;
   padding-top: 15px;
-  background-color: #222;
+  background-color: #211821;
   color: #fff;
   height:35px;
   width: 300px;
@@ -130,81 +160,299 @@ a{
 .linksnav a, .linksnav i{
   margin-right: 5px;
   text-decoration: none;
-  color: #222;
+  color: #211821;
   cursor: pointer;
 }
 .linksnav i:hover{
   color: #7A072F;
 }
 main {
-  float: right;
+  display: flex;
+  flex-direction: row;
   margin-left: 300px;
-  background-color: #222222;
-  color: #fff;
+  background-color: #DDD;
+  height: 100%;
+  width: 3000px;
 }
 .bgi{
   background-image: url(./img/illus/mercy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-blend-mode:  soft-light;
+  background-blend-mode: soft-light;
   height: inherit;
+  width: inherit;
+}
+.black{
+  z-index: 500;
+  background-color: #382938;
 }
 .bgi2{
-  background-image: url(./img/illus/arcade.jpg);
+  background-image: url(./img/illus/lol.jpg);
   background-size: cover;
-  background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-blend-mode:  soft-light;
-  height: inherit;
+  background-blend-mode: soft-light;
+  height: 100%;
+  width: inherit;
 }
 #home{
   display: block;
-  margin: auto;
-  padding:3vh;
-  margin-bottom: 3vh;
-  height: inherit;
-  background-color: #222;
+  width: 98%;
+  min-height: 100%;
+  height: 100%;
+  background-color: #211821;
   color: #fff;
 }
 #home .content{
   display: block;
   margin: auto;
-  width: 80%;
+  padding: 3vh;
+  width: 1450px;
+  overflow: hidden;
+  outline: 1 red dashed;
 }
 #illu{
   display: block;
   margin: auto;
-  padding:3vh;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
   height: inherit;
+  width: 1450px;
 }
 #anim{
   display: block;
   margin: auto;
-  padding:3vh;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  height: inherit;
-  background-color: #222;
+  background-color: #211821;
+  height: 100%;
+  width: 1000px;
 }
 #code{
   display: block;
-  margin: auto;
-  padding:3vh;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  height: inherit;
+  margin: auto
+  height: 100%;
+  width: 1000px;
 }
 #illu .content .images,#anim .content .images,#code .content .images{
-  background-color: rgba(20,20,20,0.5);
+  /* background-color: rgba(20,20,20,0.5); */
+  margin:0 auto;
   height: inherit;
-  width: 98%;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  width: 100%;
+  padding-top: 10px;
 }
+.images h2{
+  margin-bottom: 20px;
+  color:#fff;
+}
+/* SELECTOR */
+.anim{
+  -webkit-animation-name: opac;
+  -webkit-animation-duration: 0.6s;
+  animation-name: opac;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes opac {
+    from {opacity: 0}
+    to {opacity:1}
+}
+@keyframes opac {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.select{
+  display: block;
+  margin: 0 auto;
+  margin-left: 240px;
+}
+.charadesign{
+  display: none;
+}
+.lily{
+  display:none;
+}
+.witchies{
+  display:none;
+}
+.overwatch{
+  display:none;
+}
+.commissions{
+  display:none;
+}
+.designs{
+  display:none;
+}
+.fanarts{
+  display:none;
+}
+/* Hexagones */
+#catexit{
+  position: absolute;
+  z-index: 100;
+}
+.catexit{
+  background-color: rgba(122,7,47,1);
+  height: 280px;
+  width: 350px;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-left: 56px;
+}
+.catexit i{
+  text-align: center;
+  color: #fff;
+}
+.hexa{
+  transition: ease 0.5s;
+  width: 280px;
+  margin-bottom: 14px;
+}
+.hexa:hover{
+  transform: scale(0.95);
+}
+.hoverimg{
+  position: fixed;
+  opacity: 0;
+  background-color: rgba(122,7,47,0.5);
+  height: 280px;
+  width: 350px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #fff;
+}
+.hoverimg:hover{
+  opacity: 1;
+}
+.hoverimg h4{
+  padding-top: 80px;
+}
+.hexagones1{
+  position: relative;
+  float: left;
+  padding-top: 140px;
+  min-width: 350px;
+  width: 380px;
+}
+.hexagones2{
+  position: relative;
+  float: left;
+  min-width: 350px;
+  width: 380px;
+}
+.hexagones3{
+  position: relative;
+  float: left;
+  min-width: 350px;
+  width: 380px;
+}
+.gridhex{
+  margin-left: -120px;
+}
+.hex1{
+  display: block;
+  height: 280px;
+  width: 335px;
+  transform: rotate(60deg);
+  overflow: hidden;
+  margin: 0vh
+}
+.hex2{
+  display: block;
+  height: 280px;
+  width: 335px;
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+.hex3{
+  display: block;
+  height: 280px;
+  width: 335px;
+  transform: rotate(240deg);
+  background-color: grey;
+  overflow: hidden;
+}
+.exithex1{
+  display: block;
+  height: 140px;
+  width: 167px;
+  transform: rotate(60deg);
+  overflow: hidden;
+  margin: 0vh
+}
+.exithex2{
+  display: block;
+  height: 140px;
+  width: 167px;
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+.exithex3{
+  display: block;
+  height: 140px;
+  width: 167px;
+  transform: rotate(240deg);
+  background-color: grey;
+  overflow: hidden;
+}
+.hex1span{
+  display: block;
+  height: 420px;
+  width: 502px;
+  transform: rotate(60deg);
+  overflow: hidden;
+  margin: 0vh
+}
+.hex2span{
+  display: block;
+  height: 420px;
+  width: 502px;
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+.hex3span{
+  display: block;
+  height: 340px;
+  width: 502px;
+  transform: rotate(240deg);
+  color: #222;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 80px;
+}
+.hex4{
+  display: block;
+  height: 1120px;
+  width: 1340px;
+  transform: rotate(60deg);
+  overflow: hidden;
+  margin: 0vh
+}
+.hex5{
+  display: block;
+  height: 1120px;
+  width: 1340px;
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+.hex6{
+  display: block;
+  height: 920px;
+  width: 1340px;
+  transform: rotate(240deg);
+  background-color: #FFF;
+  color: #222;
+  text-align: center;
+  padding-top: 200px;
+}
+.cut{
+  position: absolute;
+    top : 200px;
+    left: 609px;
+  width: 1200px;
+  height:100%;
+  overflow:hidden;
+}
+/*  */
+
 .flex{
   display: flex;
   flex-wrap: wrap;
@@ -259,10 +507,10 @@ main {
 #contact{
   display: block;
   margin: auto;
-  padding:3vh;
-  margin-top: 3vh;
-  height: inherit;
-  background-color: #222;
+  background-color: #211821;
+  color: #fff;
+  height: 100%;
+  width: 300px;
 }
 .content{
   z-index: 1;
@@ -271,8 +519,10 @@ main {
 #contact .content{
   display: block;
   margin: auto;
-  width: 30%;
+  height: 50%;
+  width: 200px;
   text-align: center;
+  margin-top: 400px;
 }
 #contact .links{
   display: block;

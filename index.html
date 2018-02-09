@@ -1,19 +1,19 @@
+<!DOCTYPE html>
 <html>
- 	 <head>
-     <html lang="fr">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <title>Nicolas Van Roost</title>
+  <head>
+    <html lang="fr">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <title>Nicolas Van Roost</title>
   </head>
   <body>
-    <!-- NAVIGATEUR -->
     <nav>
       <div class="navcontent">
         <div class="img"></div>
         <h1>Nicolas </br>Van Roost</br>(Ez)</h1>
         <!--BOUTONS DE NAVIGATION-->
-        <div class="buttons">
+        <div class="buttons" id="nav">
           <ul>
             <a id="homelink" class="button"><li><p>home</p><div class="picto"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div></li></a>
             <a id="illulink" class="button"><li><p>illustration</p><div class="picto"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i></div></li></a>
@@ -34,209 +34,737 @@
           <i id="tel" class="fa fa-phone fa-2x" aria-hidden="true"></i>
         </div>
       </div>
-    </nav>
-    <!-- MAIN CONTENT -->
-    <main>
-      <section id="home"><!--SECTION HOME-->
+    </nav> <!-- \\\\\\\\\\ NAVBAR \\\\\\\\\\ -->
+    <main>  <!-- \\\\\\\\\\ Main SITE \\\\\\\\\\ -->
+      <section id="home"> <!-- ////////// SECTION HOME  ////////// -->
         <div class="content">
-          <!-- rendre cette section plus graphique...-->
           <h2>Nicolas (Ez) Van Roost</br>Qui suis-je?</h2>
-          <p><strong>Nom :</strong> Nicolas Van Roost</p>
-          <p><strong>Pseudonyme :</strong> Ez</p>
-          <p><strong>Age :</strong> 23 ans (30 octobre 1994)</p>
-          <p><strong>Titres :</strong> Illustrateur - Character Designer - Animateur - Graphiste - Developper web</p>
-          <p><strong>Diplômes :</strong> Bac+3 Infographie (Illustration et animation) et Web developper chez Becode.org</p>
-          <p><strong>Adresse :</strong> Ottignies, Belgique</p>
-          </br>
-          <p><strong>Compétences</strong></p>
-          <p><strong>Strong skills :</strong> Character Design - Dessin - Peinture - Photographie - Vidéo</p>
-          <p><strong>Strong software skills :</strong> Photoshop - Illustrator - InDesign - Premiere - AfterEffect - LightRoom - Audition - Audacity - Sony Vegas - TVPaint - CorelPainter</p>
-          <p><strong>Other software skills :</strong> Gravit - C4D - Maya - Blender</p>
-          <p><strong>Strong developpement skills :</strong> HTML5 - CSS - JS</p>
-          <p><strong>Other developpement skills :</strong> PHP - MYSQL - PHPMyAdmin - POO - PDO - MVC</p>
           <!-- <p>Passionné de dessin depuis mon plus jeune âge, mon parcours m'a conduit à faire de ma passion mon métier. Illustrateur, animateur, programmateur et bien d'autres.</br> Un brin "touche à tout", j'adore apprendre et élargir mon champs de compétences. Constamment en recherche d'amélioration, je n'hésite pas à me remettre en question afin de mieux avancer. Confiant en équipe et motivé, je cherche toujours à donner le meilleur de moi dans tout ce que j'entreprend.</p> -->
           <!-- mettre une sorte de time bar pour mon expérience, avec des images et des infos en survol. -->
+          <div class="hex1span">
+            <div class="hex2span">
+              <div class="hex3span">
+                <p><strong>Nom :</strong> Nicolas Van Roost</p>
+                <p><strong>Pseudonyme :</strong> Ez</p>
+                <p><strong>Age :</strong> 23 ans (30 octobre 1994)</p>
+                <p><strong>Titres :</strong> Illustrateur - Character Designer - Animateur <br/> Graphiste - Developper web</p>
+                <p><strong>Diplômes :</strong> Bac+3 Infographie (Illustration et animation) <br/>et Web developper chez Becode.org</p>
+                <p><strong>Adresse :</strong> Ottignies, Belgique</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cut">
+          <div class="hex4">
+            <div class="hex5">
+              <div class="hex6">
+                <p><strong>Compétences</strong></p>
+                <p><strong>Strong skills :</strong> Character Design - Dessin - Peinture - Photographie - Vidéo</p>
+                <p><strong>Strong software skills :</strong> Photoshop - Illustrator - InDesign - Premiere - AfterEffect - LightRoom <br/> Audition - Audacity - Sony Vegas - TVPaint - CorelPainter</p>
+                <p><strong>Other software skills :</strong> Gravit - C4D - Maya - Blender</p>
+                <p><strong>Strong developpement skills :</strong> HTML5 - CSS - JS</p>
+                <p><strong>Other developpement skills :</strong> PHP - MYSQL - PHPMyAdmin - POO - PDO - MVC</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <div class="bgi"><!--image bg mercy.jpg-->
-        <section id="illu"><!--SECTION PORTFOLIO-->
+      <section id="illu"> <!-- ////////// SECTION PORTFOLIO ILLU ////////// -->
+        <div class="bgi black"> <!--bg 1 !!!IMPORTANT : faire une image blur-->
           <div class="content">
             <div class="images">
               <h2>portfolio | illustration</h2>
-              <div class="flex">
-                <div class="vignette"><!--img1-->
-                  <div class="zoom" id="img1"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/arcade.jpg"/></div>
-                  <div class="desc">
-                    <h4>Arcade team</h4>
-                    <p>Projet arcade.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img2-->
-                  <div class="zoom" id="img2"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/mercy.jpg" style="height:130%; width:120%; margin-left:-3vh; margin-top:-3vh"/></div>
-                  <div class="desc">
-                    <h4>Mercy</h4>
-                    <p>Fanart de Mercy du jeu Overwatch.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img3-->
-                  <div class="zoom" id="img3"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/Kallie.jpg"/></div>
-                  <div class="desc">
-                    <h4>Kallie</h4>
-                    <p>Character design d'un personnage de mon univers : Kallie, la mage.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img4-->
-                  <div class="zoom" id="img4"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/Jenna.jpg" style="margin-left:-5vh;"/></div>
-                  <div class="desc">
-                    <h4>Jenna</h4>
-                    <p>Character design d'un personnage de mon univers : Jenna, la berserker.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img5-->
-                  <div class="zoom" id="img5"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/dva.jpg"/></div>
-                  <div class="desc">
-                    <h4>D.va</h4>
-                    <p>Fanart de D.va du jeu Overwatch.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img6-->
-                  <div class="zoom" id="img6"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/sylvanas.jpg" style="margin-left:-8vh;"/></div>
-                  <div class="desc">
-                    <h4>sylvanas</h4>
-                    <p>Fanart de Sylvanas de la série de jeux Warcraft.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img7-->
-                  <div class="zoom" id="img7"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/lol.jpg"/></div>
-                  <div class="desc">
-                    <h4>Glitch/vaporwave design</h4>
-                    <p>Design dans un style glitchwave.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img8-->
-                  <div class="zoom" id="img8"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/eiva.jpg"/></div>
-                  <div class="desc">
-                    <h4>Eiva</h4>
-                    <p>Fanart du Character Design d'une amie.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img9-->
-                  <div class="zoom" id="img9"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/fab.jpg" style="margin-left:-6vh;"/></div>
-                  <div class="desc">
-                    <h4>Veigar</h4>
-                    <p>Fanart de Veigar de League of Legends. Pour un ami.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img10-->
-                  <div class="zoom" id="img10"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/hbKeyboy.jpg" style="margin-left:-12vh;"/></div>
-                  <div class="desc">
-                    <h4>Keyboy</h4>
-                    <p>Fanart de Keyori et Jaynee (youtubers).</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img11-->
-                  <div class="zoom" id="img11"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/nama.jpg" style="margin-left:-5vh;"/></div>
-                  <div class="desc">
-                    <h4>Nama</h4>
-                    <p>Fanart d'une amie (youtubeuse).</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img12-->
-                  <div class="zoom" id="img12"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/undertale2.jpg" style="margin-left:-7vh;"/></div>
-                  <div class="desc">
-                    <h4>Undertale</h4>
-                    <p>Fanart du jeu Undertale.</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img13-->
-                  <div class="zoom" id="img13"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/djd.png" style="margin-left:-8vh;"/></div>
-                  <div class="desc">
-                    <h4>DeeJayDee</h4>
-                    <p>Projet pour une illu pour t-shirt pour DeeJayDee (streamer).</p>
-                  </div>
-                </div>
-                <div class="vignette"><!--img13-->
-                  <div class="zoom" id="img14"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/illus/hs.jpg" style="margin-left:-8vh;"/></div>
-                  <div class="desc">
-                    <h4>HearthStone</h4>
-                    <p>Fanart du jeu HearthStone.</p>
+              <div id="catexit" class="anim"><!-- \\\\\\\\\\ EXIT \\\\\\\\\\ -->
+                <div class="hexa">
+                  <div class="exithex1">
+                    <div class="exithex2">
+                      <div class="exithex3">
+                        <div class="catexit">
+                          <p><i class="fa fa-arrow-left fa-4x"></i></p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section id="anim"><!--SECTION PORTFOLIO-->
-        <div class="content">
-          <div class="images">
-            <h2>portfolio | animation</h2>
-            <div class="flex">
-              <div class="vignette"><!--anim1-->
-                <div class="zoom" id="anim1"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                <div class="mini"><img src="./img/anim/tropgros.png"/></div>
-                <div class="desc">
-                  <h4>Trop gros</h4>
-                  <p>Travail de fin d'études en Animation</p>
+              <div id="select" class="anim select"> <!-- \\\\\\\\\\ SELECT \\\\\\\\\\ -->
+                <div class="hexagones1"><!-- 2 hexa -->
+                  <div class="hexa"><!-- ///// Character Design ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="catchara">
+                            <h4>Character Design</h4>
+                            <p>Here are my character designs.</p>
+                          </div>
+                          <img src="./img/illus/Angie.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Witchies ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="catwitch">
+                            <h4>Witchies</h4>
+                            <p>I love to draw witchies.</p>
+                          </div>
+                          <img src="./img/illus/champi.jpg" style="height:140%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones3 gridhex"><!-- 3 hexa -->
+                  <div class="hexa"><!-- ///// Overwatch ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="catoverwatch">
+                            <h4>Overwatch</h4>
+                            <p>Drawings from my favorite game</p>
+                          </div>
+                          <img src="./img/illus/mercychibi.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Lily ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="catlily">
+                            <h4>Lily</h4>
+                            <p>Here is my main Official Character : Lily.</p>
+                          </div>
+                          <img src="./img/illus/chibilily.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Fan arts ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="catfanart">
+                            <h4>Fan arts</h4>
+                            <p>Some fan arts from various Licences.</p>
+                          </div>
+                          <img src="./img/illus/sylvanas.jpg" style="height:100%; width:130%; margin-left: -10vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones1 gridhex"><!-- 2 hexa -->
+                  <div class="hexa"><!-- ///// Commissions ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="catcommis">
+                            <h4>Commissions</h4>
+                            <p>Here are the drawings I made for people.</p>
+                          </div>
+                          <img src="./img/illus/eiva2.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Designs ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="catdesign">
+                            <h4>Designs</h4>
+                            <p>Sometimes I make designs.</p>
+                          </div>
+                          <img src="./img/illus/lol.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="vignette"><!--anim2-->
-                <div class="zoom" id="anim2"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                <div class="mini"><img src="./img/anim/project.jpg"/></div>
-                <div class="desc">
-                  <h4>Quest's quest</h4>
-                  <p>Projet futur en cours de développement. Aussi nommé Q-Q.</p>
+              <div id="charadesign" class="anim select"><!-- \\\\\\\\\\ CHARACTER DESIGN \\\\\\\\\\ -->
+                <div class="hexagones1">
+                  <div class="hexa"><!-- ///// Angie ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img25">
+                            <h4>Angie</h4>
+                            <p>Character : Angie, magical girl.</p>
+                          </div>
+                          <img src="./img/illus/Angie.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Witchie (chara) ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img26">
+                            <h4>Witchie</h4>
+                            <p>Character design : Witchie.</p>
+                          </div>
+                          <img src="./img/illus/witchie.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones3 gridhex">
+                  <div class="hexa"><!-- ///// squad ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img28">
+                            <h4>The squad</h4>
+                            <p>Jenna - Lily - Kallie</p>
+                          </div>
+                          <img src="./img/illus/group.jpg" style="height:150%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Jenna ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img4">
+                            <h4>Jenna</h4>
+                            <p>Character design : Jenna, la berserker.</p>
+                          </div>
+                          <img src="./img/illus/Jenna.jpg" style="height:100%; width:140%; margin-left:-5vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Kallie ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img3">
+                            <h4>Kallie</h4>
+                            <p>Character design : Kallie, la mage.</p>
+                          </div>
+                          <img src="./img/illus/Kallie.jpg" style="height:100%; width:130%; margin-left: 1vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="lily" class="anim select"><!-- \\\\\\\\\\ LILY \\\\\\\\\\ -->
+                <div class="hexagones1 gridhex">
+                  <div class="hexa"><!-- ///// Chibi lily ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img18">
+                            <h4>Chibi Lily</h4>
+                            <p>Version Chibi de Lily.</p>
+                          </div>
+                          <img src="./img/illus/chibilily.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Lily Automne ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img19">
+                            <h4>Lily in fall</h4>
+                            <p>Design de Lily version automnale.</p>
+                          </div>
+                          <img src="./img/illus/lilyfall.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones3 gridhex">
+                  <div class="hexa"><!-- ///// Lily noel ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img20">
+                            <h4>Christmassy Lily (2017)</h4>
+                            <p>Lily version Noël.</p>
+                          </div>
+                          <img src="./img/illus/lilynoel.jpg" style="height:160%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Lily hyperion ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img21">
+                            <h4>Lily Hyperion</h4>
+                            <p>Outfit d'Hyperion, <br/>inspiré des jeux Borderlands.</p>
+                          </div>
+                          <img src="./img/illus/lilyhyperion.jpg" style="height:160%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Lily portrait ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img24">
+                            <h4>Portrait - Lily</h4>
+                            <p>Petit portrait de mon perso.</p>
+                          </div>
+                          <img src="./img/illus/lilyport.png" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones1 gridhex">
+                  <div class="hexa"><!-- ///// Lily pixel ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img27">
+                            <h4>Pixelart : Lily</h4>
+                            <p>Pixelart de mon perso</p>
+                          </div>
+                          <img src="./img/illus/pixel.png" style="height:130%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Chirstmas lily (2017) ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img33">
+                            <h4>Lily Noel (2017)</h4>
+                            <p>Lily version Noël 2017.</p>
+                          </div>
+                          <img src="./img/illus/lilychristmas.jpg" style="height:130%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones3 gridhex">
+                  <div class="hexa"><!-- ///// Lily pokemon ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img30">
+                            <h4>Lily's Pokemons</h4>
+                            <p>Lily et son équipe de Pokémons</p>
+                          </div>
+                          <img src="./img/illus/pokelily.jpg" style="height:100%; width:130%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Lily drawing ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img31">
+                            <h4>Lily is drawing</h4>
+                            <p>dessin random de Lily.</p>
+                          </div>
+                          <img src="./img/illus/lilydrawing.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Lily winter ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img32">
+                            <h4>Winter Lily</h4>
+                            <p>Outfit pour Lily, version hivernale.</p>
+                          </div>
+                          <img src="./img/illus/winterlily.jpg" style="height:100%; width:140%; margin-left: -5vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="witchies" class="anim select"><!-- \\\\\\\\\\ WITCHIES \\\\\\\\\\ -->
+                <div class="hexagones1">
+                  <div class="hexa"><!-- ///// champi ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img23">
+                            <h4>Mushroom witch</h4>
+                            <p>Sorcière champignon.</p>
+                          </div>
+                          <img src="./img/illus/champi.jpg" style="height:130%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// whitchie ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img36">
+                            <h4>Witchie</h4>
+                            <p>Perso : Witchie.</p>
+                          </div>
+                          <img src="./img/illus/witchie2.jpg" style="height:180%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="overwatch" class="anim select"><!-- \\\\\\\\\\ OVERWATCH \\\\\\\\\\ -->
+                <div class="hexagones1">
+                  <div class="hexa"><!-- ///// Mercy chibi ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img37">
+                            <h4>Chibi Mercy</h4>
+                            <p>Mercy version Chibi</p>
+                          </div>
+                          <img src="./img/illus/mercychibi.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Cat dva ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img15">
+                            <h4>Black cat D.va</h4>
+                            <p>Fanart de D.va du jeu Overwatch.</p>
+                          </div>
+                          <img src="./img/illus/dvacat.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones3 gridhex">
+                  <div class="hexa"><!-- ///// Dva chibi ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img16">
+                            <h4>Chibi Dva</h4>
+                            <p>Dva version chibi.</p>
+                          </div>
+                          <img src="./img/illus/chibidva.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Mercy ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img2">
+                            <h4>Mercy</h4>
+                            <p>Fanart de Mercy du jeu Overwatch.</p>
+                          </div>
+                          <img src="./img/illus/mercy.jpg" style="height:100%; width:100%;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Mercy chibi ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img29">
+                            <h4>Mercy</h4>
+                            <p>Fanart de Mercy du jeu Overwatch</p>
+                          </div>
+                          <img src="./img/illus/chibimercy.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones1 gridhex">
+                  <div class="hexa"><!-- ///// Dva ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img5">
+                            <h4>D.va</h4>
+                            <p>Fanart de D.va du jeu Overwatch.</p>
+                          </div>
+                          <img src="./img/illus/dva.jpg" style="height:100%; width:100%;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="commissions" class="anim select"><!-- \\\\\\\\\\ COMMISSIONS \\\\\\\\\\ -->
+                <div class="hexagones1">
+                  <div class="hexa"><!-- ///// Eiva ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img17">
+                            <h4>Eiva (2018)</h4>
+                            <p>Cadeau d'aniversaire pour Eiva</p>
+                          </div>
+                          <img src="./img/illus/eiva2.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Drawme ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img26">
+                            <h4>Elesis</h4>
+                            <p>Fanart du cosplay d'Elesis <br/>par Drawmeacosplay.</p>
+                          </div>
+                          <img src="./img/illus/drawme.jpg" style="height:100%; width:100%; margin-left: 0vh"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones3 gridhex">
+                  <div class="hexa"><!-- ///// Nama ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img11">
+                            <h4>Nama</h4>
+                            <p>Fanart d'une amie (youtubeuse).</p>
+                          </div>
+                          <img src="./img/illus/nama.jpg" style="height:100%; width:130%; margin-left:-5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Keyboy ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img10">
+                            <h4>Keyboy</h4>
+                            <p>Fanart de Keyori et Jaynee (youtubers).</p>
+                          </div>
+                          <img src="./img/illus/hbKeyboy.jpg" style="height:100%; width:130%; margin-left:-5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Arcade team ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img1">
+                            <h4>Arcade team</h4>
+                            <p>Projet arcade.</p>
+                          </div>
+                          <img src="./img/illus/arcade.jpg" style="height:100%; width:120%;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones1 gridhex">
+                  <div class="hexa"><!-- ///// DJD ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img13">
+                            <h4>DeeJayDee</h4>
+                            <p>Projet pour une illu pour t-shirt</br> pour DeeJayDee (streamer).</p>
+                          </div>
+                          <img src="./img/illus/djd.png" style="height:100%; width:130%; margin-left:-5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Eiva ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img8">
+                            <h4>Eiva</h4>
+                            <p>Fanart du Character Design d'une amie.</p>
+                          </div>
+                          <img src="./img/illus/eiva.jpg" style="height:100%; width:130%; margin-left:-5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="designs" class="anim select"><!-- \\\\\\\\\\ DESIGNS \\\\\\\\\\ -->
+                <div class="hexagones1">
+                  <div class="hexa"><!-- ///// vaporwave ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img7">
+                            <h4>Glitch/vaporwave design</h4>
+                            <p>Design dans un style glitchwave.</p>
+                          </div>
+                          <img src="./img/illus/lol.jpg" style="height:100%; width:100%;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="fanarts" class="anim select"><!-- \\\\\\\\\\ FANARTS \\\\\\\\\\ -->
+                <div class="hexagones1">
+                  <div class="hexa"><!-- ///// Sylvanas ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img6">
+                            <h4>Sylvanas</h4>
+                            <p>Fanart de Sylvanas du jeu Warcraft.</p>
+                          </div>
+                          <img src="./img/illus/sylvanas.jpg" style="height:100%; width:120%;margin-left:-8.5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// Undertale ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img12">
+                            <h4>Undertale</h4>
+                            <p>Fanart du jeu Undertale.</p>
+                          </div>
+                          <img src="./img/illus/undertale2.jpg" style="height:100%; width:130%; margin-left:-5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexagones3 gridhex">
+                  <div class="hexa"><!-- ///// Veigar ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img9">
+                            <h4>Veigar</h4>
+                            <p>Fanart de Veigar de League of Legends.</p>
+                          </div>
+                          <img src="./img/illus/fab.jpg" style="height:100%; width:130%; margin-left:-5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hexa"><!-- ///// HearthStone ///// -->
+                    <div class="hex1">
+                      <div class="hex2">
+                        <div class="hex3">
+                          <div class="hoverimg" id="img14">
+                            <h4>HearthStone</h4>
+                            <p>Fanart du jeu HearthStone.</p>
+                          </div>
+                          <img src="./img/illus/hs.jpg" style="height:100%; width:130%; margin-left:-5vh;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="bgi2"><!--image bg 2-->
-        <section id="code"><!--SECTION PORTFOLIO-->
-          <div class="content">
-            <div class="images">
-              <h2>portfolio | Programmation</h2>
-              <div class="flex">
-                <div class="vignette"><!--code1-->
-                  <div class="zoom" id="code1"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="./img/code/portfolio.jpg" style="margin-left:-8vh"/></div>
-                  <div class="desc">
-                    <h4>Ezaaii - Portfolio</h4>
-                    <p>Création de A à Z de ce site.</p>
+      <section id="anim"><!-- ////////// SECTION PORTFOLIO ANIM ////////// -->
+        <div class="content">
+          <div class="images">
+            <h2>portfolio | animation</h2>
+            <div class="hexagones1">
+              <div class="hexa"><!-- ///// Trop Gros ///// -->
+                <div class="hex1">
+                  <div class="hex2">
+                    <div class="hex3">
+                      <div class="hoverimg" id="anim1">
+                        <h4>Trop gros</h4>
+                        <p>Travail de fin d'études en Animation.</p>
+                      </div>
+                      <img src="./img/anim/tropgros.png" style="height:100%; width:120%;"/>
+                    </div>
                   </div>
                 </div>
-                <div class="vignette"><!--code1-->
-                  <div class="zoom" id="code2"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></div>
-                  <div class="mini"><img src="" style="margin-left:-8vh"/></div>
-                  <div class="desc">
-                    <h4>Mazy Culture</h4>
-                    <p>Projet de OnePage pour mazyculture.org</p>
+              </div>
+              <div class="hexa"><!-- ///// Quest's Quest ///// -->
+                <div class="hex1">
+                  <div class="hex2">
+                    <div class="hex3">
+                      <div class="hoverimg" id="anim2">
+                        <h4>Quest's quest</h4>
+                        <p>Projet futur en cours de développement.</p>
+                      </div>
+                      <img src="./img/anim/project.jpg" style="height:100%; width:100%;"/>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-      <section id="contact"><!--SECTION CONTACT-->
+        </div>
+      </section>
+      <section id="code"><!-- ////////// SECTION PORTFOLIO CODE ////////// -->
+        <div class="bgi2 black"><!--image bg 2 !!!IMPORTANT : faire une image blur-->
+          <div class="content">
+            <div class="images">
+            <h2>portfolio | Programmation</h2>
+              <div class="hexagones1">
+                <div class="hexa"><!-- ///// Portfolio ///// -->
+                  <div class="hex1">
+                    <div class="hex2">
+                      <div class="hex3">
+                        <div class="hoverimg" id="code1">
+                          <h4>Ezaaii - Portfolio</h4>
+                          <p>Création de A à Z de ce site.</p>
+                        </div>
+                        <img src="./img/code/portfolio.jpg" style="height:100%; width:120%;"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hexa"><!-- ///// Mazy culture ///// -->
+                  <div class="hex1">
+                    <div class="hex2">
+                      <div class="hex3">
+                        <div class="hoverimg" id="code2">
+                          <h4>Mazy Culture</h4>
+                          <p>Projet de OnePage pour mazyculture.org</p>
+                        </div>
+                        <img src="" style="height:100%; width:100%;"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact"><!-- ////////// SECTION CONTACT ////////// -->
         <div class="content">
-          <h2>contact</h2>
-          <hr>
           <div class="links"><!--boutons-->
             <a href="https://www.facebook.com/ezouille" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.twitter.com/ezaaii" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
@@ -249,32 +777,33 @@
             <i id="tel2" class="fa fa-phone fa-2x" aria-hidden="true"></i>
           </div>
           <hr>
-          <p>Copyright © Nicolas Van Roost (Ez) | 2017</p>
+          <p>Copyright © | 2017 </br> Nicolas Van Roost (Ez)</p>
         </div>
       </section>
-      <!--ZOOM PHOTOS : HIDDEN MODAL-->
-      <!-- illus -->
-      <div id="myModal1" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button1"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/arcade.jpg"/></div><div class="H_desc"><h3>Arcade team</h3><p>Projet arcade.</p></div></div></div></div>
-      <div id="myModal2" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button2"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/mercy.jpg"/></div><div class="H_desc"><h3>Mercy</h3><p>Fanart de Mercy du jeu Overwatch.</p></div></div></div></div>
-      <div id="myModal3" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button3"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/Kallie.jpg"/></div><div class="H_desc"><h3>Kallie</h3><p>Character design d'un personnage de mon univers : Kallie, la mage.</p></div></div></div></div>
-      <div id="myModal4" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button4"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/Jenna.jpg"/></div><div class="H_desc"><h3>Jenna</h3><p>Character design d'un personnage de mon univers : Jenna, la berserker.</p></div></div></div></div>
-      <div id="myModal5" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button5"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/dva.jpg"/></div><div class="H_desc"><h3>D.va</h3><p>Fanart de D.va du jeu Overwatch.</p></div></div></div></div>
-      <div id="myModal6" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button6"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/sylvanas.jpg"/></div><div class="H_desc"><h3>Sylvanas</h3><p>Fanart de Sylvanas de la série de jeux Warcraft.</p></div></div></div></div>
-      <div id="myModal7" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button7"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/lol.jpg"/></div><div class="H_desc"><h3>Glitch/vaporwave design</h3><p>Design dans un style glitchwave.</p></div></div></div></div>
-      <div id="myModal8" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button8"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/eiva.jpg"/></div><div class="H_desc"><h3>Eiva</h3><p>Fanart du Character Design d'une amie.</p></div></div></div></div>
-      <div id="myModal9" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button9"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/fab.jpg"/></div><div class="H_desc"><h3>Veigar</h3><p>Fanart de Veigar de League of Legends. Pour un ami.</p></div></div></div></div>
-      <div id="myModal10" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button10"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/hbKeyboy.jpg"/></div><div class="H_desc"><h3>Keyboy</h3><p>Fanart de Keyori et Jaynee (youtubers).</p></div></div></div></div>
-      <div id="myModal11" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button11"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/nama.jpg"/></div><div class="H_desc"><h3>Nama</h3><p>Fanart d'une amie (youtubeuse).</p></div></div></div></div>
-      <div id="myModal12" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button12"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/undertale2.jpg"/></div><div class="H_desc"><h3>Undertale</h3><p>Fanart du jeu Undertale.</p></div></div></div></div>
-      <div id="myModal13" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button13"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/djd.png"/><img src="./img/illus/djd2.png"/></div><div class="H_desc"><h3>DeeJayDee</h3><p><p>C'est un projet pour un ami. Il stream sur twitch.tv sur HearthStone et voulait que je lui crée une illstration pour des t-shirts et une autre pour son stream stream.</p></div></div></div></div>
-      <div id="myModal14" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button14"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/hs.jpg"/></div><div class="H_desc"><h3>HearthStone</h3><p></p></div></div></div></div>
-      <!-- anims -->
-      <div id="myModalanim1" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exitanim_button1"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/anim/tropgros.png"/><iframe src="https://player.vimeo.com/video/181405424" width="1140" height="860" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><div class="H_desc"><h3>Trop gros</h3><p>Travail de fin d'études en Animation</p></div></div></div></div>
-      <div id="myModalanim2" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exitanim_button2"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/anim/project.jpg"/></div><div class="H_desc"><h3>WORK IN PROGRESS</br>Quest's quest</h3><p><p>Projet futur en cours de développement. Aussi nommé Q-Q.</p></div></div></div></div>
-      <!-- code -->
-      <div id="myModalcode1" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exitcode_button1"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/code/portfolio.jpg"/></div><div class="H_desc"><h3>Ce site</h3><p><p>Bah oui lol!</p></div></div></div></div>
+      <div class="modals"><!-- ////////// MODALS //////////-->
+        <div id="myModal1" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button1"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/arcade.jpg"/></div><div class="H_desc"><h3>Arcade team</h3><p>Projet arcade.</p></div></div></div></div>
+        <div id="myModal2" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button2"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/mercy.jpg"/></div><div class="H_desc"><h3>Mercy</h3><p>Fanart de Mercy du jeu Overwatch.</p></div></div></div></div>
+        <div id="myModal3" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button3"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/Kallie.jpg"/></div><div class="H_desc"><h3>Kallie</h3><p>Character design d'un personnage de mon univers : Kallie, la mage.</p></div></div></div></div>
+        <div id="myModal4" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button4"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/Jenna.jpg"/></div><div class="H_desc"><h3>Jenna</h3><p>Character design d'un personnage de mon univers : Jenna, la berserker.</p></div></div></div></div>
+        <div id="myModal5" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button5"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/dva.jpg"/></div><div class="H_desc"><h3>D.va</h3><p>Fanart de D.va du jeu Overwatch.</p></div></div></div></div>
+        <div id="myModal6" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button6"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/sylvanas.jpg"/></div><div class="H_desc"><h3>Sylvanas</h3><p>Fanart de Sylvanas de la série de jeux Warcraft.</p></div></div></div></div>
+        <div id="myModal7" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button7"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/lol.jpg"/></div><div class="H_desc"><h3>Glitch/vaporwave design</h3><p>Design dans un style glitchwave.</p></div></div></div></div>
+        <div id="myModal8" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button8"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/eiva.jpg"/></div><div class="H_desc"><h3>Eiva</h3><p>Fanart du Character Design d'une amie.</p></div></div></div></div>
+        <div id="myModal9" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button9"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/fab.jpg"/></div><div class="H_desc"><h3>Veigar</h3><p>Fanart de Veigar de League of Legends. Pour un ami.</p></div></div></div></div>
+        <div id="myModal10" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button10"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/hbKeyboy.jpg"/></div><div class="H_desc"><h3>Keyboy</h3><p>Fanart de Keyori et Jaynee (youtubers).</p></div></div></div></div>
+        <div id="myModal11" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button11"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/nama.jpg"/></div><div class="H_desc"><h3>Nama</h3><p>Fanart d'une amie (youtubeuse).</p></div></div></div></div>
+        <div id="myModal12" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button12"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/undertale2.jpg"/></div><div class="H_desc"><h3>Undertale</h3><p>Fanart du jeu Undertale.</p></div></div></div></div>
+        <div id="myModal13" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button13"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/djd.png"/><img src="./img/illus/djd2.png"/><img src="./img/illus/tshirt.jpg"> </div><div class="H_desc"><h3>DeeJayDee</h3><p><p>C'est un projet pour un ami. Il stream sur twitch.tv sur HearthStone et voulait que je lui crée une illstration pour des t-shirts et une autre pour son stream stream.</p></div></div></div></div>
+        <div id="myModal14" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exit_button14"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/illus/hs.jpg"/></div><div class="H_desc"><h3>HearthStone</h3><p></p></div></div></div></div>
+        <!-- anims -->
+        <div id="myModalanim1" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exitanim_button1"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/anim/tropgros.png"/><iframe src="https://player.vimeo.com/video/181405424" width="1140" height="860" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><div class="H_desc"><h3>Trop gros</h3><p>Travail de fin d'études en Animation</p></div></div></div></div>
+        <div id="myModalanim2" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exitanim_button2"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/anim/project.jpg"/></div><div class="H_desc"><h3>WORK IN PROGRESS</br>Quest's quest</h3><p><p>Projet futur en cours de développement. Aussi nommé Q-Q.</p></div></div></div></div>
+        <!-- code -->
+        <div id="myModalcode1" class="modal"><div class="H_box"><div class="H_boxcontent"><div class="exit_button" id="exitcode_button1"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="./img/code/portfolio.jpg"/></div><div class="H_desc"><h3>Ce site</h3><p><p>Plus de 1300 lignes d'HTML/CSS/JS écrite à la main! J'avais besoin d'un site personnel, fait de A à Z pour montrer mes différents talents. Le design géométrique à été choisi pour son emboitement facile et design. Les couleurs font partie de la palette utilisée pour mes illustration.</p></div></div></div></div>
+      </div>
     </main>
     <script src="scroll.js"></script>
     <script src="zoom.js"></script>
+    <script src="select.js"></script>
   </body>
 </html>

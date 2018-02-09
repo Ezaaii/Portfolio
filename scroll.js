@@ -11,73 +11,72 @@ var docelink = document.querySelector("#codelink");
 var code = document.querySelector("#code");
 var contlink = document.querySelector("#contactlink");
 var cont = document.querySelector("#contact");
+//light the button of the current section
+
+function unlight(){// unlight every buttons
+  homelink.classList.remove("highlighted");
+  illulink.classList.remove("highlighted");
+  animlink.classList.remove("highlighted");
+  codelink.classList.remove("highlighted");
+  contlink.classList.remove("highlighted");
+}
 //refresh scroll + highlight
 homelink.classList.add("highlighted");
 window.scroll({
-  top : home.offsetTop,
+  left : home.offsetLeft,
+  top : 0,
   left : 0,
   behavior : 'smooth'
 });
-
 homelink.addEventListener("click", function(){
+  unlight();
   homelink.classList.add("highlighted");
   window.scroll({
-    top : home.offsetTop,
+    left : home.offsetLeft,
+    top : 0,
     left : 0,
     behavior : 'smooth'
   });
-  illulink.classList.remove("highlighted");
-  animlink.classList.remove("highlighted");
-  codelink.classList.remove("highlighted");
-  contlink.classList.remove("highlighted");
 });
 illulink.addEventListener("click", function(){
+  unlight();
   illulink.classList.add("highlighted");
   window.scroll({
-    top : illu.offsetTop,
-    left : 0,
+    left : illu.offsetLeft,
+    top : 0,
+    left : 1500,
     behavior : 'smooth'
   });
-  homelink.classList.remove("highlighted");
-  animlink.classList.remove("highlighted");
-  codelink.classList.remove("highlighted");
-  contlink.classList.remove("highlighted");
 });
 animlink.addEventListener("click", function(){
+  unlight();
   animlink.classList.add("highlighted");
   window.scroll({
-    top : anim.offsetTop,
-    left : 0,
+    left : anim.offsetLeft,
+    top : 0,
+    left : 2950,
     behavior : 'smooth'
   });
-  homelink.classList.remove("highlighted");
-  illulink.classList.remove("highlighted");
-  codelink.classList.remove("highlighted");
-  contlink.classList.remove("highlighted");
 });
 codelink.addEventListener("click", function(){
+  unlight();
   codelink.classList.add("highlighted");
   window.scroll({
-    top : code.offsetTop,
-    left : 0,
+    left : code.offsetLeft,
+    top : 0,
+    left : 3600,
     behavior : 'smooth'
   });
-  homelink.classList.remove("highlighted");
-  illulink.classList.remove("highlighted");
-  animlink.classList.remove("highlighted");
-  contlink.classList.remove("highlighted");
 });
 contlink.addEventListener("click", function(){
+  unlight();
   contlink.classList.add("highlighted");
   window.scroll({
-    top : cont.offsetTop,
-    left : 0,
+    left : cont.offsetLeft,
+    top : 0,
+    left : 4000,
     behavior : 'smooth'
   });
-  homelink.classList.remove("highlighted");
-  illulink.classList.remove("highlighted");
-  animlink.classList.remove("highlighted");
-  codelink.classList.remove("highlighted");
 });
 
 /////////
