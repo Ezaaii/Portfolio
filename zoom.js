@@ -1,7 +1,7 @@
 // /!\ TROUVER UN MOYEN D'EVITER LA REPETITION......... :(
 
 function select(){
-  var image = document.getElementById(id);
+  var image = document.getElementById(id+"title").innerHTML;
   id_img.push(image);
 }
 function createmodal(){
