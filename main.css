@@ -242,6 +242,43 @@ main {
   margin-bottom: 20px;
   color:#fff;
 }
+.desc h4, .desc p{
+  color: #222;
+}
+#contact{
+  display: block;
+  margin: auto;
+  background-color: #211821;
+  color: #fff;
+  height: 100%;
+  width: 300px;
+}
+.content{
+  z-index: 1;
+  margin-left: 3vh;
+}
+#contact .content{
+  display: block;
+  margin: auto;
+  height: 50%;
+  width: 200px;
+  text-align: center;
+  margin-top: 400px;
+}
+#contact .links{
+  display: block;
+  /*flex-direction: row;*/
+  padding: 0;
+  margin-left: 2vh;
+}
+#contact .links i{
+  margin-right: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+#contact .links i:hover{
+color: #7A072F;
+}
 /* SELECTOR */
 .anim{
   -webkit-animation-name: opac;
@@ -451,97 +488,10 @@ main {
   height:100%;
   overflow:hidden;
 }
-/*  */
-
-.flex{
-  display: flex;
-  flex-wrap: wrap;
-  width: inherit;
-  height: inherit;
-  margin: 3.5vh;
-}
-.images .flex .vignette{
-  height: 360px;
-  width: 317px;
-  background-color: #fff;
-  margin: 1vh;
-  border-radius: 6px;
-  box-shadow: 5px 5px 5px rgba(10,10,10,0.5);
-  overflow: hidden;
-}
-.zoom{
-  display: block;
-  position: absolute;
-  background-color: rgba(122,7,47,0);
-  color: rgba(256,256,256,0);
-  height: 150px;
-  width: inherit;
-  border-radius: 6px 6px 0px 0px;
-  text-align: center;
-  padding-top: 100px;
-  cursor: pointer;
-}
-.zoom:hover{
-  background-color: rgba(122,7,47,0.5);
-  color: rgba(256,256,256,1);
-}
-.mini{
-  height: 70%;
-  background-color: #fff;
-  border-radius: 6px 6px 0px 0px;
-  overflow: hidden;
-}
-.mini img{
-  display: block;
-  margin: auto;
-  height: 100%;
-}
-.desc{
-  display: block;
-  height: 30%;
-  margin: 1vh;
-}
-.desc h4, .desc p{
-  color: #222;
-}
-#contact{
-  display: block;
-  margin: auto;
-  background-color: #211821;
-  color: #fff;
-  height: 100%;
-  width: 300px;
-}
-.content{
-  z-index: 1;
-  margin-left: 3vh;
-}
-#contact .content{
-  display: block;
-  margin: auto;
-  height: 50%;
-  width: 200px;
-  text-align: center;
-  margin-top: 400px;
-}
-#contact .links{
-  display: block;
-  /*flex-direction: row;*/
-  padding: 0;
-  margin-left: 2vh;
-}
-#contact .links i{
-  margin-right: 15px;
-  color: #fff;
-  cursor: pointer;
-}
-#contact .links i:hover{
-color: #7A072F;
-}
 
 /*MODAL*/
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 500; /* Sit on top */
     padding-top: 0.5vh; /* Location of the box */
@@ -554,12 +504,12 @@ color: #7A072F;
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 .H_box{
+  outline: red dashed 1px;
   display: block;
   margin: 0 auto;
   margin-top: 2.5vh;
   padding-top: 0.5vh;
-  width: 1200px;
-  background-color: #fff;
+  width: 1400px;
   border-radius: 6px;
   box-shadow: 5px 5px 5px rgba(10,10,10,0.5)
 }
@@ -570,16 +520,17 @@ color: #7A072F;
   width: 95%;
 }
 .H_pics{
+  float: left;
   display: block;
   margin: auto;
-  width: 100%;
-  background-color: white;
+  width: 74%;
+  background-color: rgba(0,0,0,0);
 }
 .H_pics img{
   width: 100%
 }
 .H_pics iframe{
-  background-color: #fff;
+  background-color: rgba(0,0,0,0);
 }
 .exit_button{
   position: absolute;
@@ -597,14 +548,17 @@ color: #7A072F;
 }
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 .H_desc {
+    float: left;
     margin: auto;
+    margin-left: 1vh;
     display: block;
-    width: 80%;
+    width: 25%;
     max-width: 700px;
     text-align: center;
-    color: #222;
+    color: #fff;
     padding: 10px 0;
     height: 150px;
+    outline: blue dashed 1px;
 }
 /* Add Animation - Zoom in the Modal */
 .H_box {
