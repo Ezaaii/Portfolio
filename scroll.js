@@ -100,3 +100,10 @@ var tel2 = document.getElementById('tel2');
 tel2.addEventListener("click", function(){
   alert("Vous pouvez m'appeller au 0474/../../..");
 });
+
+// document.querySelectorAll('hoverimg').addEventListener("onclick", function(){
+//   document.getElemtByTagName("body").classList.add("killscroll");
+// });
+// dovument.querySelectorAll('exit_button').addEventListener("onclick", function(){
+//   document.getElemtByTagName("main").classList.remove("killscroll");
+// });
