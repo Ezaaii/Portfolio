@@ -1,22 +1,33 @@
 // /!\ TROUVER UN MOYEN D'EVITER LA REPETITION......... :(
+var modal = document.getElementsByClassName('modal');
+var exit = document.getElementsByClassName("exit_button");// Get the X element that closes the modal
+exit.onclick = function() {// When the user clicks on X, close the modal
+  modal.style.display = "none";
 
-function select(){
-  var image = document.getElementById(id+"title").innerHTML;
-  id_img.push(image);
-}
-function createmodal(){
-  document.write('<div class="modal"><div class="H_box"><div class="exit_button" id="exit_button"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div><div class="H_pics"><img src="'+images+'"/></div><div class="H_desc"><h3>'+title+'</h3><p>'+description+'</p></div></div></div>');
-}
-var id_img = [];
-var img = "img";
-for (i=0; i<36; i++){
-  var id = img+i;
-  select();
-}
-console.log(id_img);
-id.onclick=function(){
-  createmodal();
-}
+
+
+
+// function select(){
+//   var image = document.getElementById(id+"title").src;
+//   id_img.push(image);
+// }
+// var id_img = [];
+// var img = "img";
+// for (i=1; i<36; i++){
+//   var id = img+i;
+//   select();
+//   var idee = document.getElementById(id);
+//   idee.onclick=function(){
+//     createmodal();
+//     console.log("hey");
+//     console.log(idee);
+//   }
+// }
+// function createmodal(){
+//   var modal = document.getElementById(id+"modal");
+//   modal.style.display = "block";
+// }
+
 //CALL DES IMAGES
 //IMG 1
 // var modal1 = document.getElementById('myModal1');// Get the modal

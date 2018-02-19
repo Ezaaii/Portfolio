@@ -1,5 +1,5 @@
 /* PTR */
-.bloc1{
+/* .bloc1{
   display: none;
   margin: 0 auto;
   padding : 2vh;
@@ -17,12 +17,6 @@
   display: block;
   margin: 0 auto;
   width: 700px;
-}
-.lefto {
-  float: left;
-}
-.righto{
-  float:left;
 }
 .cat{
   margin-bottom: 1vh;
@@ -44,8 +38,8 @@
   text-align: center;
   border-radius: 0px 8px 8px 0px;
   box-shadow: 3px 3px 3px #111;
-}
-/*DESKTOP VERSION*/
+} */
+/* ///////////////////////// DESKTOP VERSION ///////////////////////// */
 html{
   height: 100%;
   width: inherit;
@@ -58,7 +52,13 @@ body{
   width: inherit;
   overflow-y: hidden;
 }
-/* scroll bar */
+.lefto {
+  float: left;
+}
+.righto{
+  float:left;
+}
+/* ////////// scroll bar /////////// */
 ::-webkit-scrollbar { /* width */
     height: 5px;
     width: 5px;
@@ -69,6 +69,7 @@ body{
 ::-webkit-scrollbar-thumb {/* Handle */
     background:  #fff;
 }
+/* ////////// NAVBAR ////////// */
 h1, h2, h3, h4{
   text-transform: uppercase;
   text-align: center;
@@ -279,7 +280,7 @@ main {
 #contact .links i:hover{
 color: #7A072F;
 }
-/* SELECTOR */
+/* /////////// SELECTOR //////////// */
 .anim{
   -webkit-animation-name: opac;
   -webkit-animation-duration: 0.6s;
@@ -320,7 +321,7 @@ color: #7A072F;
 .fanarts{
   display:none;
 }
-/* Hexagones */
+/* ////////// Hexagones ////////// */
 #catexit{
   position: absolute;
   z-index: 100;
@@ -489,7 +490,97 @@ color: #7A072F;
   overflow:hidden;
 }
 
-/*MODAL*/
+/* ////////// MODAL ////////// */
+/* ILLUS */
+.modal:target{
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#img1modal{display: none;}
+#img1modal:target{display: block;}
+#img2modal{display: none;}
+#img2modal:target{display: block}
+#img3modal{display: none;}
+#img3modal:target{display: block}
+#img4modal{display: none;}
+#img4modal:target{display: block}
+#img5modal{display: none;}
+#img5modal:target{display: block}
+#img6modal{display: none;}
+#img6modal:target{display: block}
+#img7modal{display: none;}
+#img7modal:target{display: block}
+#img8modal{display: none;}
+#img8modal:target{display: block}
+#img9modal{display: none;}
+#img9modal:target{display: block}
+#img10modal{display: none;}
+#img10modal:target{display: block}
+#img11modal{display: none;}
+#img11modal:target{display: block}
+#img12modal{display: none;}
+#img12modal:target{display: block}
+#img13modal{display: none;}
+#img13modal:target{display: block}
+#img14modal{display: none;}
+#img14modal:target{display: block}
+#img15modal{display: none;}
+#img15modal:target{display: block}
+#img16modal{display: none;}
+#img16modal:target{display: block}
+#img17modal{display: none;}
+#img17modal:target{display: block}
+#img18modal{display: none;}
+#img18modal:target{display: block}
+#img19modal{display: none;}
+#img19modal:target{display: block}
+#img20modal{display: none;}
+#img20modal:target{display: block}
+#img21modal{display: none;}
+#img21modal:target{display: block}
+#img22modal{display: none;}
+#img22modal:target{display: block}
+#img23modal{display: none;}
+#img23modal:target{display: block}
+#img24modal{display: none;}
+#img24modal:target{display: block}
+#img25modal{display: none;}
+#img25modal:target{display: block}
+#img26modal{display: none;}
+#img26modal:target{display: block}
+#img27modal{display: none;}
+#img27modal:target{display: block}
+#img28modal{display: none;}
+#img28modal:target{display: block}
+#img29modal{display: none;}
+#img29modal:target{display: block}
+#img30modal{display: none;}
+#img30modal:target{display: block}
+#img31modal{display: none;}
+#img31modal:target{display: block}
+#img32modal{display: none;}
+#img32modal:target{display: block}
+#img33modal{display: none;}
+#img33modal:target{display: block}
+#img34modal{display: none;}
+#img34modal:target{display: block}
+#img35modal{display: none;}
+#img35modal:target{display: block}
+/* ANIM */
+#anim1modal{display: none;}
+#anim1modal:target{display: block}
+#anim2modal{display: none;}
+#anim2modal:target{display: block}
+/* CODE */
+#code1modal{display: none;}
+#code1modal:target{display: block}
+#code2modal{display: none;}
+#code2modal:target{display: block}
+
+/* MODAL DESIGN */
 .modal {
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -504,8 +595,7 @@ color: #7A072F;
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 .H_box{
-  outline: red dashed 1px;
-  display: block;
+  display: static;
   margin: 0 auto;
   margin-top: 2.5vh;
   padding-top: 0.5vh;
@@ -554,11 +644,16 @@ color: #7A072F;
     display: block;
     width: 25%;
     max-width: 700px;
-    text-align: center;
     color: #fff;
-    padding: 10px 0;
+    padding: 2em 0;
     height: 150px;
-    outline: blue dashed 1px;
+}
+.H_desc p{
+  padding: 2vh;
+  text-align: justify;
+}
+.H_desc h3{
+  text-align: center;
 }
 /* Add Animation - Zoom in the Modal */
 .H_box {
