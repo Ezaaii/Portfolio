@@ -493,94 +493,49 @@ color: #7A072F;
 
 /* ////////// MODAL ////////// */
 /* ILLUS */
-/* .modal-open{
-  overflow-x: hidden;
-  position: fixed;
-} */
 #img1modal{display: none;}
-#img1modal:target{display: block;}
 #img2modal{display: none;}
-#img2modal:target{display: block}
 #img3modal{display: none;}
-#img3modal:target{display: block}
 #img4modal{display: none;}
-#img4modal:target{display: block}
 #img5modal{display: none;}
-#img5modal:target{display: block}
 #img6modal{display: none;}
-#img6modal:target{display: block}
 #img7modal{display: none;}
-#img7modal:target{display: block}
 #img8modal{display: none;}
-#img8modal:target{display: block}
 #img9modal{display: none;}
-#img9modal:target{display: block}
 #img10modal{display: none;}
-#img10modal:target{display: block}
 #img11modal{display: none;}
-#img11modal:target{display: block}
 #img12modal{display: none;}
-#img12modal:target{display: block}
 #img13modal{display: none;}
-#img13modal:target{display: block}
 #img14modal{display: none;}
-#img14modal:target{display: block}
 #img15modal{display: none;}
-#img15modal:target{display: block}
 #img16modal{display: none;}
-#img16modal:target{display: block}
 #img17modal{display: none;}
-#img17modal:target{display: block}
 #img18modal{display: none;}
-#img18modal:target{display: block}
 #img19modal{display: none;}
-#img19modal:target{display: block}
 #img20modal{display: none;}
-#img20modal:target{display: block}
 #img21modal{display: none;}
-#img21modal:target{display: block}
 #img22modal{display: none;}
-#img22modal:target{display: block}
 #img23modal{display: none;}
-#img23modal:target{display: block}
 #img24modal{display: none;}
-#img24modal:target{display: block}
 #img25modal{display: none;}
-#img25modal:target{display: block}
 #img26modal{display: none;}
-#img26modal:target{display: block}
 #img27modal{display: none;}
-#img27modal:target{display: block}
 #img28modal{display: none;}
-#img28modal:target{display: block}
 #img29modal{display: none;}
-#img29modal:target{display: block}
 #img30modal{display: none;}
-#img30modal:target{display: block}
 #img31modal{display: none;}
-#img31modal:target{display: block}
 #img32modal{display: none;}
-#img32modal:target{display: block}
 #img33modal{display: none;}
-#img33modal:target{display: block}
 #img34modal{display: none;}
-#img34modal:target{display: block}
 #img35modal{display: none;}
-#img35modal:target{display: block}
 /* ANIM */
 #anim1modal{display: none;}
-#anim1modal:target{display: block}
 #anim2modal{display: none;}
-#anim2modal:target{display: block}
 /* CODE */
 #code1modal{display: none;}
-#code1modal:target{display: block}
 #code2modal{display: none;}
-#code2modal:target{display: block}
-
 /* MODAL DESIGN */
 .modal {
-    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 500; /* Sit on top */
     padding-top: 0.5vh; /* Location of the box */
@@ -635,7 +590,7 @@ color: #7A072F;
   cursor: pointer;
   z-index: 501;
 }
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/* modal desc */
 .H_desc {
     float: left;
     margin: auto;
@@ -654,7 +609,7 @@ color: #7A072F;
 .H_desc h3{
   text-align: center;
 }
-/* Add Animation - Zoom in the Modal */
+/* Animation */
 .H_box {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -668,6 +623,9 @@ color: #7A072F;
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
+}
+.modal-open{
+overflow-x: hidden;
 }
 /*MODAL ON SMARTPHONE*/
 @media only screen and (max-width: 700px){

@@ -1,11 +1,45 @@
+var buttonillu = document.getElementsByClassName('buttonillu');//selectionne les boutons
+var b=1;
+var clic = false;
+condevent();
+buttonillu[b].addEventListener("click", function(){
+  clic == true;
+});
+function condevent(){
+  if(clic == true){
+    while(b<=buttonillu.length){
+      creatidee();
+      showmodal();
+      b++;
+      clic == false;
+    }
+  } else if (clic == false){
+    console.log("clique pour test?");
+  } else {
+    console.log("hein?");
+  }
+}
+function creatidee(){
+  var illuid = "#img"+b+"modal";
+  console.log(illuid);
+}
+function eventbutton(){
+  buttonillu[b].addEventListener("click", showmodal(), false);
+}
+function showmodal(){
+  illuid.style.display = "block";
+}
+
+
+
 // /!\ TROUVER UN MOYEN D'EVITER LA REPETITION......... :(
-var modal = document.getElementsByClassName('modal');
-var exit = document.getElementsByClassName("exit_button");// Get the X element that closes the modal
-exit.onclick = function() {// When the user clicks on X, close the modal
-  modal.style.display = "none";
-
-
-
+// var modal = document.getElementsByClassName('modal');
+// var exit = document.getElementsByClassName("exit_button");// Get the X element that closes the modal
+// exit.onclick = function() {// When the user clicks on X, close the modal
+//   modal.style.display = "none";
+//
+//
+//
 
 // function select(){
 //   var image = document.getElementById(id+"title").src;

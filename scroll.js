@@ -101,9 +101,27 @@ tel2.addEventListener("click", function(){
   alert("Vous pouvez m'appeller au 0474/../../..");
 });
 
-// document.querySelectorAll('hoverimg').addEventListener("onclick", function(){
-//   document.getElemtByTagName("body").classList.add("killscroll");
-// });
-// dovument.querySelectorAll('exit_button').addEventListener("onclick", function(){
-//   document.getElemtByTagName("main").classList.remove("killscroll");
-// });
+/////////////////
+// KILL SCROLL //
+/////////////////
+
+var modal = document.getElementsByClassName('modal');
+var body = document.getElementById('body');
+var lock = document.getElementsByClassName('lock');
+var exit = document.getElementsByClassName('exit_button');
+for (i=0; i<lock.length; i++){
+  lock[i].addEventListener("click", function(){
+    body.classList.add("modal-open");
+    for (b=0; b<modal.length; b++){//boucle pour afficher le modal
+      modal[b].style.display = "block";
+    }
+  });
+}
+for (e=0; e<exit.length; e++){
+  exit[e].addEventListener("click", function(){
+    body.classList.remove("modal-open");
+    for (a=0; a<modal.length; a++){//boucle pour effacer le modal
+      modal[a].style.display = "none";
+    }
+  });
+}
