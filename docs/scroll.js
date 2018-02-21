@@ -54,7 +54,7 @@ animlink.addEventListener("click", function(){
   window.scroll({
     left : anim.offsetLeft,
     top : 0,
-    left : 2950,
+    left : 3000,
     behavior : 'smooth'
   });
 });
@@ -64,7 +64,7 @@ codelink.addEventListener("click", function(){
   window.scroll({
     left : code.offsetLeft,
     top : 0,
-    left : 3600,
+    left : 4500,
     behavior : 'smooth'
   });
 });
@@ -74,7 +74,7 @@ contlink.addEventListener("click", function(){
   window.scroll({
     left : cont.offsetLeft,
     top : 0,
-    left : 4000,
+    left : 6000,
     behavior : 'smooth'
   });
 });
@@ -94,32 +94,64 @@ mail2.addEventListener("click", function(){
 
 var tel = document.getElementById('tel');
 tel.addEventListener("click", function(){
-  alert("Vous pouvez m'appeller au 0474/../../..");
+  alert("Désolé! Je n'ai pas encore de numéro professionnel.");
 });
 var tel2 = document.getElementById('tel2');
 tel2.addEventListener("click", function(){
-  alert("Vous pouvez m'appeller au 0474/../../..");
+  alert("Désolé! Je n'ai pas encore de numéro professionnel.");
 });
 
-/////////////////
-// KILL SCROLL //
-/////////////////
+///////////////////////
+// HORIZONTAL SCROLL //
+///////////////////////
+window.addEventListener('wheel', ScrollActivation);//start the function.
+function replaceScroll(event, modalclose) {
+  if (event.deltaY != 0) {
+    window.scroll(window.scrollX + event.deltaY * 3, window.scrollY);//replace by horizontal scroll
+  }
+  return;
+}
+var modalclose = true;//boolean to run/stop horizontal scroll
+function stopScrollActivation() {
+  modalclose = false;//stop horizontal scroll
+}
+function runScrollActivation() {
+  modalclose = true;//rerun horizontal scroll
+}
+function ScrollActivation() {
+  if(modalclose) {//if the modal is closed, run the horizontal scroll
+    replaceScroll(event, modalclose);
+  }
+}
+
+//////////////////////////
+// KILL SCROLL on modal //
+//////////////////////////
 
 var modal = document.getElementsByClassName('modal');
 var body = document.getElementById('body');
 var lock = document.getElementsByClassName('lock');
 var exit = document.getElementsByClassName('exit_button');
+var close = document.getElementsByClassName('close');
 for (i=0; i<lock.length; i++){
   lock[i].addEventListener("click", function(){
     body.classList.add("modal-open");
-    for (b=0; b<modal.length; b++){//boucle pour afficher le modal
-      modal[b].style.display = "block";
-    }
+    stopScrollActivation();//Stop horizontal scroll
   });
 }
 for (e=0; e<exit.length; e++){
   exit[e].addEventListener("click", function(){
     body.classList.remove("modal-open");
+    runScrollActivation();// Rerun the horizontal scroll
+    for (a=0; a<modal.length; a++){//boucle pour effacer le modal
+      modal[a].style.display = "none";
+    }
+  });
+}
+for (e=0; e<close.length; e++){
+  close[e].addEventListener("click", function(){
+    body.classList.remove("modal-open");
+    runScrollActivation();// Rerun the horizontal scroll
     for (a=0; a<modal.length; a++){//boucle pour effacer le modal
       modal[a].style.display = "none";
     }

@@ -188,6 +188,7 @@ main {
 .black{
   z-index: 500;
   background-color: #382938;
+  width: inherit;
 }
 .bgi2{
   background-image: url(./img/illus/lol.jpg);
@@ -212,35 +213,65 @@ main {
   padding: 3vh;
   width: 1450px;
   overflow: hidden;
+  overflow-x: hidden;
   outline: 1 red dashed;
 }
 #illu{
   display: block;
-  margin: auto;
+  margin: 0 auto;
   height: inherit;
-  width: 1450px;
+  width: 1500px;
+  min-width: 1500px;
 }
 #anim{
   display: block;
   margin: auto;
   background-color: #211821;
   height: 100%;
-  width: 1000px;
+  width: 1500px;
+  min-width: 1500px;
 }
 #code{
   display: block;
   margin: auto
   height: 100%;
-  width: 1000px;
+  width: 1500px;
+  min-width: 1500px;
 }
 #illu .content .images,#anim .content .images,#code .content .images{
   /* background-color: rgba(20,20,20,0.5); */
   margin:0 auto;
   height: inherit;
-  width: 100%;
+  width: inherit;
   padding-top: 10px;
 }
+#select{
+  width: inherit;
+}
+#charadesign{
+  width: inherit;
+}
+#lily{
+  width: inherit;
+}
+#witchies{
+  width: inherit;
+}
+#overwatch{
+  width: inherit;
+}
+#commissions{
+  width: inherit;
+}
+#designs{
+  width: inherit;
+}
+#fanarts{
+  width: inherit;
+}
 .images h2{
+  margin: 0 auto;
+  width: 800px;
   margin-bottom: 20px;
   color:#fff;
 }
@@ -256,12 +287,13 @@ main {
   width: 300px;
 }
 .content{
+  margin: 0 auto;
   z-index: 1;
   margin-left: 3vh;
 }
 #contact .content{
   display: block;
-  margin: auto;
+  margin: 0 auto;
   height: 50%;
   width: 200px;
   text-align: center;
@@ -299,7 +331,10 @@ color: #7A072F;
 .select{
   display: block;
   margin: 0 auto;
-  margin-left: 240px;
+  height: 1400px;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding-left: 120px;
 }
 .charadesign{
   display: none;
@@ -326,6 +361,10 @@ color: #7A072F;
 #catexit{
   position: absolute;
   z-index: 100;
+}
+.overflow{
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 .catexit{
   background-color: rgba(122,7,47,1);
@@ -528,6 +567,8 @@ color: #7A072F;
 #img33modal{display: none;}
 #img34modal{display: none;}
 #img35modal{display: none;}
+#img36modal{display: none;}
+
 /* ANIM */
 #anim1modal{display: none;}
 #anim2modal{display: none;}
@@ -545,17 +586,24 @@ color: #7A072F;
     height: 100vh; /* Full height */
     overflow-x: hidden;
     overflow-y: initial;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+.close{
+  position: absolute;
+  z-index: -100;
+  top: 0vh;
+  height: 100%;
+  width: 100%;
 }
 .H_box{
   display: static;
+  z-index: 500;
   margin: 0 auto;
   margin-top: 2.5vh;
   padding-top: 0.5vh;
   width: 1400px;
+  height: 100%;
   border-radius: 6px;
-  box-shadow: 5px 5px 5px rgba(10,10,10,0.5)
 }
 .H_box .H_boxcontent{
   display: block;
@@ -580,7 +628,7 @@ color: #7A072F;
   position: absolute;
   float: right;
   margin:10px;
-  background-color: #222;
+  background-color: rgba(122,7,47,0.2);
   color:#fff;
   text-align: center;
   padding-top: 3px;
@@ -589,6 +637,9 @@ color: #7A072F;
   border-radius: 6px;
   cursor: pointer;
   z-index: 501;
+}
+.exit_button:hover{
+  background-color: rgba(122,7,47,1);
 }
 /* modal desc */
 .H_desc {
@@ -667,6 +718,9 @@ overflow-x: hidden;
   .picto{
     display: block;
     margin-top: -1vh;
+  }
+  .cut{
+    margin-left: -215px;
   }
 }
 /*SMARTPHONE USAGE*/
@@ -778,7 +832,4 @@ overflow-x: hidden;
     margin: auto;
     padding-left: 5vh;
   }
-}
-.killscroll {
-  overflow-x: hidden !important;
 }
