@@ -20,6 +20,7 @@ function unlight(){// unlight every buttons
   codelink.classList.remove("highlighted");
   contlink.classList.remove("highlighted");
 }
+
 //refresh scroll + highlight
 homelink.classList.add("highlighted");
 window.scroll({

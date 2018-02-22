@@ -65,10 +65,11 @@ body{
     width: 5px;
 }
 ::-webkit-scrollbar-track {/* Track */
-    background: #211821;
+    /* background: #211821; */
+    background: #fff;
 }
 ::-webkit-scrollbar-thumb {/* Handle */
-    background:  #fff;
+    background:rgba(122,7,47,1);
 }
 /* ////////// NAVBAR ////////// */
 h1, h2, h3, h4{
@@ -389,7 +390,7 @@ color: #7A072F;
 .hoverimg{
   position: fixed;
   opacity: 0;
-  background-color: rgba(122,7,47,0.5);
+  background-color: rgba(122,7,47,0.7);
   height: 280px;
   width: 350px;
   text-align: center;
@@ -406,13 +407,7 @@ color: #7A072F;
 .hexagones1{
   position: relative;
   float: left;
-  padding-top: 140px;
-  min-width: 350px;
-  width: 380px;
-}
-.hexagones2{
-  position: relative;
-  float: left;
+  padding-top: 147px;
   min-width: 350px;
   width: 380px;
 }
@@ -444,6 +439,29 @@ color: #7A072F;
   display: block;
   height: 280px;
   width: 335px;
+  transform: rotate(240deg);
+  background-color: grey;
+  overflow: hidden;
+}
+.min-hex1{
+  display: block;
+  height: 210px;
+  width: 251px;
+  transform: rotate(60deg);
+  overflow: hidden;
+  margin: 0vh
+}
+.min-hex2{
+  display: block;
+  height: 210px;
+  width: 251px;
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+.min-hex3{
+  display: block;
+  height: 210px;
+  width: 251px;
   transform: rotate(240deg);
   background-color: grey;
   overflow: hidden;
@@ -568,7 +586,9 @@ color: #7A072F;
 #img34modal{display: none;}
 #img35modal{display: none;}
 #img36modal{display: none;}
-
+#img37modal{display: none;}
+#img38modal{display: none;}
+#img39modal{display: none;}
 /* ANIM */
 #anim1modal{display: none;}
 #anim2modal{display: none;}
@@ -643,22 +663,29 @@ color: #7A072F;
 }
 /* modal desc */
 .H_desc {
+    position: fixed;
     float: left;
     margin: auto;
-    margin-left: 1vh;
+    margin-left: 1036px;
     display: block;
-    width: 25%;
+    width: 400px;
     max-width: 700px;
-    color: #fff;
+    color: #222;
     padding: 2em 0;
-    height: 150px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0px;
 }
 .H_desc p{
   padding: 2vh;
   text-align: justify;
+  padding-bottom: 2vh;
 }
 .H_desc h3{
   text-align: center;
+}
+.H_desc span{
+  font-weight: bold;
 }
 /* Animation */
 .H_box {
