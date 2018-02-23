@@ -105,7 +105,7 @@ tel2.addEventListener("click", function(){
 ///////////////////////
 // HORIZONTAL SCROLL //
 ///////////////////////
-window.addEventListener('wheel', ScrollActivation);//start the function.
+window.addEventListener('wheel', ScrollActivation, {passive: true});//start the function.
 function replaceScroll(event, modalclose) {
   if (event.deltaY != 0) {
     window.scroll(window.scrollX + event.deltaY * 3, window.scrollY);//replace by horizontal scroll
