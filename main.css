@@ -60,7 +60,7 @@ nav .navcontent{
   height: 250px;
   border-radius: 100%;
   background-image: url(./img/profile.webp);
-  background-size: cover;
+  /* background-size: cover; */
 }
 .catchphrase{
   margin-top: 5vh;
