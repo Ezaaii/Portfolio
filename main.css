@@ -59,7 +59,7 @@ nav .navcontent{
   width: 250px;
   height: 250px;
   border-radius: 100%;
-  background-image: url(./img/profile.jpg);
+  background-image: url(./img/profile.webp);
   background-size: cover;
 }
 .catchphrase{
@@ -664,7 +664,6 @@ color: #7A072F;
   background-color: rgba(0,0,0,0);
 }
 .H_pics img{
-  width: 100%
 }
 .H_pics iframe{
   background-color: rgba(0,0,0,0);
@@ -697,7 +696,7 @@ color: #7A072F;
     max-width: 700px;
     color: #222;
     padding: 2em 0;
-    height: 500px;
+    height: 518px;
     background-color: #fff;
     border-radius: 0px 5px 5px 0px;
 }
