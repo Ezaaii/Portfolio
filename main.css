@@ -407,7 +407,7 @@ color: #7A072F;
   height: 280px;
   width: 335px;
   transform: rotate(60deg);
-  /* overflow: hidden; */
+  overflow: hidden;
   margin: 0vh
 }
 .hex2{
@@ -415,7 +415,7 @@ color: #7A072F;
   height: 280px;
   width: 335px;
   transform: rotate(60deg);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .hex3{
   display: block;
@@ -423,7 +423,7 @@ color: #7A072F;
   width: 335px;
   transform: rotate(240deg);
   background-color: #211821;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .min-hex1{
   display: block;
