@@ -791,7 +791,7 @@ overflow-x: hidden;
     height: 34px;
     box-shadow: none;
   }
-  nav .navcontent{
+  /* nav .navcontent{
     position: static;
     display: flex;
     flex-direction: row;
@@ -837,9 +837,13 @@ overflow-x: hidden;
   }
   .linksnav{
     display: none;
+  } */
+  body {
+    overflow-y: hidden;
+    max-height: 812px;
   }
-  main {
-    margin-left: 0px;
+  main{
+    margin-left: 0px
   }
   #home{
     display: block;
@@ -849,7 +853,6 @@ overflow-x: hidden;
     padding-top: 0vh;
     margin-bottom: 8vh;
     height: inherit;
-    background-color: rgba(0,0,0,0);
   }
   #home .content p{
     display: block;
@@ -883,6 +886,9 @@ overflow-x: hidden;
   }
   #illu .content .images,#anim .content .images,#code .content .images{
     width: 100%;
+  }
+  .select{
+    height: 812px;
   }
   #contact h2, #contact p, #contact hr{
     margin-left: 3vh;
