@@ -140,7 +140,7 @@ main {
   margin-left: 300px;
   background-color: #DDD;
   height: 100%;
-  width: 3000px;
+  width: inherit;
 }
 /* .bgi{
   background-image: url(./img/illus/mercy.jpg);
@@ -843,7 +843,8 @@ overflow-x: hidden;
     max-height: 812px;
   }
   main{
-    margin-left: 0px
+    margin-left: 0px;
+    margin-bottom:-1000px;
   }
   #home{
     display: block;
@@ -853,27 +854,39 @@ overflow-x: hidden;
     padding-top: 0vh;
     margin-bottom: 8vh;
     height: inherit;
+    width: inherit;
+  }
+  #home .content{
+    padding: 0;
+    width: 828px;
   }
   #home .content p{
     display: block;
     margin: auto;
     width: 75%;
+    height: 812px;
   }
   #illu,#anim,#code{
     display: block;
     margin: auto;
     padding: 0;
-    padding-left: 1.5vh;
-    margin-top: -3vh;
-    margin-bottom: -3vh;
-    height: inherit;
+    height: 812px;
+    width: 828px;
+    overflow: hidden;
+  }
+  #anim,#code{
+    margin-left: -700px;
   }
   #illu h2,#anim h2,#code h2{
     margin-top: 5vh;
     margin-left: 12vh;
   }
   .content{
-    margin-left: 1vh;
+    padding-left: 50px;
+    width: 828px;
+  }
+  #select{
+    padding-left: 100px;
   }
   #contact .content{
     width: 75%;
@@ -881,6 +894,7 @@ overflow-x: hidden;
   #contact{
     padding: 1vh;
     padding-left: 10vh;
+    height: 812px;
   }
   #illu{
   }
@@ -906,17 +920,17 @@ overflow-x: hidden;
     padding-left: 5vh;
   }
   .hex1span{
-    height: 315px;
-    width: 375px;
+    height: 236px;
+    width: 281px;
   }
   .hex2span{
-    height: 315px;
-    width: 375px;
+    height: 236px;
+    width: 281px;
   }
   .hex3span{
-    height: 255px;
-    width: 375px;
-    padding-top: 60px;
+    height: 191px;
+    width: 281px;
+    padding-top: 45px;
   }
   .cut{
     position: absolute;
@@ -926,17 +940,93 @@ overflow-x: hidden;
     height:100%;
     overflow:hidden;
   }
+  .hex1{
+    display: block;
+    height: 210px;
+    width: 251px;
+    transform: rotate(60deg);
+    overflow: hidden;
+    margin: 0vh
+  }
+  .hex2{
+    display: block;
+    height: 210px;
+    width: 251px;
+    transform: rotate(60deg);
+    overflow: hidden;
+  }
+  .hex3{
+    display: block;
+    height: 210px;
+    width: 251px;
+    transform: rotate(240deg);
+    background-color: grey;
+    overflow: hidden;
+  }
+  .empty-hex1{
+    display: block;
+    height: 210px;
+    width: 251px;
+    transform: rotate(60deg);
+    overflow: hidden;
+    margin: 0vh
+  }
+  .empty-hex2{
+    display: block;
+    height: 210px;
+    width: 251px;
+    transform: rotate(60deg);
+    overflow: hidden;
+  }
+  .empty-hex3{
+    display: block;
+    height: 210px;
+    width: 251px;
+    transform: rotate(240deg);
+    background-color: grey;
+    overflow: hidden;
+  }
+  .empty2-hex3{
+    display: block;
+    height: 210px;
+    width: 251px;
+    transform: rotate(240deg);
+    background-color: grey;
+    overflow: hidden;
+  }
   .hex4{
-    height: 560px;
-    width: 670px;
+    height: 420px;
+    width: 502px;
   }
   .hex5{
-    height: 560px;
-    width: 670px;
+    height: 420px;
+    width: 502px;
   }
   .hex6{
-    height:460px;
-    width: 670px;
-    padding-top: 100px;
+    height:390px;
+    width: 502px;
+    padding-top: 20px;
+  }
+  .gridhex{
+    margin-left: -185px;
+  }
+  .hexagones1{
+    position: relative;
+    float: left;
+    padding-top: 110px;
+    min-width: 350px;
+    width: 380px;
+  }
+  .cut{
+    position: absolute;
+      top : 260px;
+      left: 250px;
+    width: 828px;
+    height:100%;
+    overflow:hidden;
+  }
+  .hex6 .txt{
+    margin-left: 100px;
+    margin-top: 50px;
   }
 }
