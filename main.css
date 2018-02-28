@@ -786,6 +786,7 @@ overflow-x: hidden;
 /*SMARTPHONE USAGE*/
 @media only screen and (max-width: 812px){
   nav {
+    display: none;
     position: fixed;
     padding-top: 3vh;
     width: 100%;
