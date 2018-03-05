@@ -800,53 +800,6 @@ overflow-x: hidden;
     height: 34px;
     box-shadow: none;
   }
-  /* nav .navcontent{
-    position: static;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 45px;
-  }
-  .navcontent .img{
-    position: static;
-    margin-right: 0vh;
-    margin-top: -2vh;
-    margin-left: 2vh;
-    width: 45px;
-    height: 45px;
-  }
-  nav h1{
-    display: none;
-  }
-  nav ul{
-    display: flex;
-    flex-direction: row;
-    margin-top: -3vh;
-  }
-  .catchphrase{
-    display: none;
-  }
-  .buttons {
-    position: static;
-    margin-left: -30px;
-    padding-top: 0px;
-    width: 80%;
-    height:40px;
-  }
-  .button{
-    width: 60px;
-    height: 40px;
-  }
-  .button li p{
-    display: none;
-  }
-  .picto{
-    display: block;
-    margin: 0 auto;
-  }
-  .linksnav{
-    display: none;
-  } */
   #body {
     width: 414px;
     height: 812px;
