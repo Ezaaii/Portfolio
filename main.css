@@ -786,6 +786,9 @@ overflow-x: hidden;
   #illu,#anim,#code{
     height: 100%;
   }
+  .modal{
+    height: 100%;
+  }
 }
 /*SMARTPHONE USAGE*/
 @media only screen and (max-width: 414px){
