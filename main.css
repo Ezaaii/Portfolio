@@ -733,13 +733,6 @@ color: #7A072F;
 .modal-open{
 overflow-x: hidden;
 }
-/*MODAL ON SMARTPHONE*/
-@media only screen and (max-width: 700px){
-    .modal {
-        width: 100%;
-    }
-}
-
 /*LOW HEIGHT SCREEN*/
 @media only screen and (max-height: 800px){
   nav {
@@ -782,7 +775,7 @@ overflow-x: hidden;
   }
 }
 /*SMARTPHONE USAGE*/
-@media only screen and (max-width: 812px){
+@media only screen and (max-width: 414px){
   nav {
     display: none;
     position: fixed;
@@ -838,13 +831,19 @@ overflow-x: hidden;
   .linksnav{
     display: none;
   } */
-  body {
-    overflow-y: hidden;
-    max-height: 812px;
+  #body {
+    width: 414px;
+    height: 812px;
+  }
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   main{
     margin-left: 0px;
-    margin-bottom:-1000px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
   #home{
     display: block;
@@ -852,60 +851,68 @@ overflow-x: hidden;
     margin-left: 0vh;
     padding:0vh;
     padding-top: 0vh;
-    margin-bottom: 8vh;
+    margin-bottom: 0vh;
     height: inherit;
-    width: inherit;
+    width: 414px;
   }
   #home .content{
     padding: 0;
-    width: 828px;
+    width: 414px;
+  }
+  #home .content .txt{
+    margin-top: -25px;
   }
   #home .content p{
     display: block;
     margin: auto;
     width: 75%;
-    height: 812px;
   }
   #illu,#anim,#code{
     display: block;
     margin: auto;
     padding: 0;
-    height: 812px;
-    width: 828px;
-    overflow: hidden;
-  }
-  #anim,#code{
-    margin-left: -700px;
+    height: 3000px;
+    max-width:414px;
+    width:414px;
+    min-width: 0;
   }
   #illu h2,#anim h2,#code h2{
     margin-top: 5vh;
-    margin-left: 12vh;
+    margin-left: -10vh;
+    width: 400px;
   }
   .content{
-    padding-left: 50px;
-    width: 828px;
+    padding-left: 70px;
+    width: 300px;
+    margin: 0;
   }
   #select{
-    padding-left: 100px;
+    padding-left: 0px;
+    margin-left: 0px;
   }
   #contact .content{
-    width: 75%;
+    width: 300px;
+    margin-left: -20px;
   }
   #contact{
-    padding: 1vh;
-    padding-left: 10vh;
+    padding: 0vh;
+    padding-left: 0vh;
     height: 812px;
+    margin-left: 0px;
+    width: 414px;
   }
-  #illu{
+  #anim{
+
   }
   #illu .content .images,#anim .content .images,#code .content .images{
-    width: 100%;
+    width: 300px;
+    margin: 0;
   }
   .select{
-    height: 812px;
+    height: 414px;
   }
   #contact h2, #contact p, #contact hr{
-    margin-left: 3vh;
+    margin: 0;
   }
   #contact .links{
     margin-left: 0vh;
@@ -920,26 +927,28 @@ overflow-x: hidden;
     padding-left: 5vh;
   }
   .hex1span{
-    height: 236px;
-    width: 281px;
+    margin-left: 30px;
+    margin-top:5px;
+    height: 295px;
+    width: 351px;
   }
   .hex2span{
-    height: 236px;
-    width: 281px;
+    height: 295px;
+    width: 351px;
   }
   .hex3span{
-    height: 191px;
-    width: 281px;
-    padding-top: 45px;
+    height: 239px;
+    width: 351px;
+    padding-top: 56px;
   }
-  .cut{
-    position: absolute;
-      top : 200px;
-      left: 459px;
-    width: 700px;
-    height:100%;
-    overflow:hidden;
+  .hoverimg h4, .hoverimg p{
+    margin-left: -90px;
+    margin-top: 5px;
   }
+    .hoverimg2 h4, .hoverimg2 p{
+      margin-left: -90px;
+      margin-top: 5px;
+    }
   .hex1{
     display: block;
     height: 210px;
@@ -994,6 +1003,38 @@ overflow-x: hidden;
     background-color: grey;
     overflow: hidden;
   }
+  .exithex1{
+    display: block;
+    height: 70px;
+    width: 83px;
+    transform: rotate(60deg);
+    overflow: hidden;
+    margin: 0vh;
+    margin-left: -35px;
+  }
+  .exithex2{
+    display: block;
+    height: 70px;
+    width: 83px;
+    transform: rotate(60deg);
+    overflow: hidden;
+  }
+  .exithex3{
+    display: block;
+    height: 70px;
+    width: 83px;
+    transform: rotate(240deg);
+    background-color: grey;
+    overflow: hidden;
+  }
+  .catexit{
+    padding-top: 1px;
+    padding-left: 20px;
+  }
+  .catexit p i{
+    font-size: 45px;
+    margin-top: -5px;
+  }
   .hex4{
     height: 420px;
     width: 502px;
@@ -1012,21 +1053,128 @@ overflow-x: hidden;
   }
   .hexagones1{
     position: relative;
-    float: left;
-    padding-top: 110px;
-    min-width: 350px;
-    width: 380px;
+    float: none;
+    padding-top: 0px;
+    min-width: 300px;
+    width: 300px;
+  }
+  .hexagones3{
+    position: relative;
+    float: none;
+    min-width: 300px;
+    width: 300px;
+  }
+  .gridhex{
+    margin-left: 0px;
   }
   .cut{
     position: absolute;
-      top : 260px;
-      left: 250px;
-    width: 828px;
+      top : 360px;
+      left: 170px;
+    width: 459px;
     height:100%;
-    overflow:hidden;
   }
   .hex6 .txt{
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 0px;
+    width: 300px;
+    text-align: center;
+  }
+  .modal {
+      position: fixed;
+      z-index: 500;
+      padding-top: 0.5vh;
+      left: 0;
+      top: 0;
+      width: 414px;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+  }
+  .close{
+    position: absolute;
+    z-index: -100;
+    top: 0vh;
+    height: 100%;
+    width: 100%;
+  }
+  .H_box{
+    display: static;
+    z-index: 500;
+    margin: 0 auto;
+    margin-top: 2.5vh;
+    padding-top: 0.5vh;
+    width: 414px;
+    border-radius: 6px;
+  }
+  .H_box .H_boxcontent{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 95%;
+    display: flex;
+  }
+  .H_pics{
+    float: left;
+    display: block;
+    margin: auto;
+    width: 74%;
+    background-color: rgba(0,0,0,0);
+  }
+  .H_pics img{
+    width: 414px;
+  }
+  .H_pics iframe{
+    background-color: rgba(0,0,0,0);
+  }
+  .exit_button{
+    position: absolute;
+    float: right;
+    margin:10px;
+    background-color: rgba(122,7,47,0.2);
+    color:#fff;
+    text-align: center;
+    padding-top: 3px;
+    height: 37px;
+    width: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 501;
+  }
+  .exit_button:hover{
+    background-color: rgba(122,7,47,1);
+  }
+  .H_desc {
+      position: inherit;
+      float: left;
+      margin: auto;
+      margin-left: 0px;
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      color: #222;
+      padding: 2em 0;
+      height: 250px;
+      background-color: #fff;
+      border-radius: 0px 5px 5px 0px;
+  }
+  .H_desc p{
+    padding: 2vh;
+    text-align: left;
+    padding-bottom: 2vh;
+  }
+  .H_desc a{
+    color : #222;
+  }
+  .H_desc a:hover{
+    color: rgba(122,7,47,1);
+  }
+  .H_desc h3{
+    text-align: center;
+  }
+  .H_desc span{
+    font-weight: bold;
+  }
+  .select{
+    height: 3000px;
   }
 }
